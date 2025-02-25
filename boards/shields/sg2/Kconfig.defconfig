@@ -1,0 +1,17 @@
+if SHIELD_SG2_LEFT
+
+# Name must be less than 16 characters long!
+config ZMK_KEYBOARD_NAME
+    default "sg2"
+
+config ZMK_SPLIT_ROLE_CENTRAL
+    default y
+
+endif
+
+if SHIELD_SG2_LEFT || SHIELD_SG2_RIGHT
+
+config ZMK_SPLIT
+    default y
+
+endif
