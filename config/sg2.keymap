@@ -205,6 +205,11 @@
         combo_lbkt     { key-positions = < 8  9   >; bindings = <&kp LBKT     >; layers = <0  >; };  // OP
         combo_bslh     { key-positions = <28 29   >; bindings = <&kp BSLH     >; layers = <0  >; };  // >?
         combo_apos     { key-positions = <18 19   >; bindings = <&kp APOS     >; layers = <0  >; };  // L:
+        combo_rbkt_r   { key-positions = <42 43 44>; bindings = <&kp RBKT     >; layers = <0  >; };  // IOP
+        combo_lbkt_r   { key-positions = <43 44   >; bindings = <&kp LBKT     >; layers = <0  >; };  // OP
+        combo_bslh_r   { key-positions = <53 54   >; bindings = <&kp BSLH     >; layers = <0  >; };  // >?
+        combo_apos_r   { key-positions = <48 49   >; bindings = <&kp APOS     >; layers = <0  >; };  // L:
+        combo_retR_r   { key-positions = <46 47   >; bindings = <&kp RET      >; layers = <0 1>; };  // JK
         combo_task     { key-positions = <00 01   >; bindings = <&task_manager>; layers = <0  >; };  // QW
         combo_cshf     { key-positions = <20 13   >; bindings = <&sk LS(LCTRL)>; layers = <0  >; };  // ZF
         combo_caps     { key-positions = <10 13   >; bindings = <&kp CAPS     >; layers = <0  >; };  // AF
@@ -214,6 +219,14 @@
         combo_capsw    { key-positions = <10 20   >; bindings = <&caps_word>;            layers = <0>; };  // AZ
         combo_capsw2   { key-positions = <12 17   >; bindings = <&caps_word>;            layers = <0>; };  // DK
         combo_brack1   { key-positions = <03 04   >; bindings = <&ht_paren_bracket 0 0>; layers = <0>; };  // RT
+    //  00q 01w 02e 03r 04t         05y 06u 07i 08o 09p
+    //  10a 11s 12d 13f 14g         15h 16j 17k 18l 19;
+    //  20z 21x 22c 23v 24b         25n 26m 27, 28. 29/
+    //      30  31  32  33t 34s 35s 36r 37e 38 39
+    //                              40y 41u 42i 43o 44p
+    //                              45h 46j 47k 48l 49;
+    //                              50n 51m 52, 53. 54/
+    //                          55s 56r
         combo_brack2   { key-positions = <13 14   >; bindings = <&ht_brace_angle   0 0>; layers = <0>; };  // FG
         combo_colon    { key-positions = <03 13   >; bindings = <&ht_semi_colon    0 0>; layers = <0>; };  // RF
         combo_quote    { key-positions = <02 12   >; bindings = <&ht_quote_apos    0 0>; layers = <0>; };  // ED
@@ -249,6 +262,10 @@
     //  10a 11s 12d 13f 14g         15h 16j 17k 18l 19;
     //  20z 21x 22c 23v 24b         25n 26m 27, 28. 29/
     //      30  31  32  33t 34s 35s 36r 37e 38 39
+    //                              40y 41u 42i 43o 44p
+    //                              45h 46j 47k 48l 49;
+    //                              50n 51m 52, 53. 54/
+    //                          55s 56r
 
 
     //   888    d8P
