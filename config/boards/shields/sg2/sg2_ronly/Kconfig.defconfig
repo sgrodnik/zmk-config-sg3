@@ -1,0 +1,6 @@
+if SHIELD_SG2_RONLY
+
+config ZMK_KEYBOARD_NAME
+    default "sg2_ronly"
+
+endif

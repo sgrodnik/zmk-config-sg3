@@ -3,6 +3,3 @@ config SHIELD_SG2_LEFT
 
 config SHIELD_SG2_RIGHT
     def_bool $(shields_list_contains,sg2_right)
-
-config SHIELD_SG2_RONLY
-    def_bool $(shields_list_contains,sg2_ronly)

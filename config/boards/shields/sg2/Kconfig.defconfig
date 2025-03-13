@@ -15,11 +15,3 @@ config ZMK_SPLIT
     default y
 
 endif
-
-if SHIELD_SG2_RONLY
-
-# Name must be less than 16 characters long!
-config ZMK_KEYBOARD_NAME
-    default "sg2_ronly"
-
-endif
