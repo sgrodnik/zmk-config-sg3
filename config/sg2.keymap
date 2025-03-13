@@ -286,7 +286,7 @@
 
         default0 { bindings = <
 //╭── 00      ──┬── 01     ──┬── 02     ──┬── 03     ──┬── 04     ──╮                        ╭── 05      ──┬── 06    ──┬── 07    ──┬── 08   ──┬── 09       ──╮
-  &kp Z         &kp W        &kp E        &kp R        &kp T                                 &kp Y         &kp U       &kp I       &kp O      &kp P
+  &kp Q         &kp W        &kp E        &kp R        &kp T                                 &kp Y         &kp U       &kp I       &kp O      &kp P
 //├── 10      ──┼── 11     ──┼── 12     ──┼── 13     ──┼── 14     ──┤                        ├── 15      ──┼── 16    ──┼── 17    ──┼── 18   ──┼── 19       ──┤
   &hm LGUI A    &hm LALT S   &hm LSHFT D  &hm LCTRL F  &kp G                                 &kp H         &hm hJ      &hm hK      &hm hL     &hm hSEMI
 //├── 20      ──┼── 21     ──┼── 22     ──┼── 23     ──┼── 24     ──┤                        ├── 25      ──┼── 26    ──┼── 27    ──┼── 28   ──┼── 29       ──┤
