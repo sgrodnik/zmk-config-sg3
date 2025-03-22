@@ -212,8 +212,10 @@
         combo_retR_r   { key-positions = <46 47   >; bindings = <&kp RET      >; layers = <0 1>; };  // JK
         combo_task     { key-positions = <00 01   >; bindings = <&task_manager>; layers = <0  >; };  // QW
         combo_cshf     { key-positions = <20 13   >; bindings = <&sk LS(LCTRL)>; layers = <0  >; };  // ZF
+        combo_c        { key-positions = <00 13   >; bindings = <&sk LCTRL    >; layers = <0  >; };  // QF
         combo_caps     { key-positions = <10 13   >; bindings = <&kp CAPS     >; layers = <0  >; };  // AF
         combo_macro1   { key-positions = < 7 16   >; bindings = <&macro1      >; layers = <0  >; };  // IJ
+        combo_macro1_r { key-positions = <42 46   >; bindings = <&macro1      >; layers = <0  >; };  // IJ
         combo_shift1   { key-positions = <12 34   >; bindings = <&layer_mod 1 LSHIFT>; layers = <0>; slow-release;};  // Dspace
         combo_ctrl1    { key-positions = <13 34   >; bindings = <&layer_mod 1 LCTRL >; layers = <0>; slow-release;};  // Fspace
         combo_capsw    { key-positions = <10 20   >; bindings = <&caps_word>;            layers = <0>; };  // AZ
@@ -246,16 +248,36 @@
         combo_undo     { key-positions = <10 11   >; bindings = <&ht_undo_redo 0 0>;     layers = <0>; };  // AS
         combo_back_clos{ key-positions = <11 12   >; bindings = <&ht_back_clos 0 0>;     layers = <2>; };  // SD
         combo_new_reop { key-positions = <12 13   >; bindings = <&ht_new_reop 0 0>;      layers = <2>; };  // DF
-        combo_sym_1    { key-positions = <17 21   >; bindings = <&kp LS(1)>;             layers = <0>; };
-        combo_sym_2    { key-positions = <17 22   >; bindings = <&kp LS(2)>;             layers = <0>; };
-        combo_sym_3    { key-positions = <17 23   >; bindings = <&kp LS(3)>;             layers = <0>; };
-        combo_sym_4    { key-positions = <17 11   >; bindings = <&kp LS(4)>;             layers = <0>; };
-        combo_sym_5    { key-positions = <17 12   >; bindings = <&kp LS(5)>;             layers = <0>; };
-        combo_sym_6    { key-positions = <17 13   >; bindings = <&kp LS(6)>;             layers = <0>; };
-        combo_sym_7    { key-positions = <17 01   >; bindings = <&kp LS(7)>;             layers = <0>; };
-        combo_sym_8    { key-positions = <17 02   >; bindings = <&kp LS(8)>;             layers = <0>; };
-        combo_sym_9    { key-positions = <17 03   >; bindings = <&kp LS(9)>;             layers = <0>; };
-        combo_sym_0    { key-positions = <17 14   >; bindings = <&kp LS(0)>;             layers = <0>; };
+        combo_sym_1k    { key-positions = <17 21   >; bindings = <&kp LS(N1)>;             layers = <0>; };
+        combo_sym_2k    { key-positions = <17 22   >; bindings = <&kp LS(N2)>;             layers = <0>; };
+        combo_sym_3k    { key-positions = <17 23   >; bindings = <&kp LS(N3)>;             layers = <0>; };
+        combo_sym_4k    { key-positions = <17 11   >; bindings = <&kp LS(N4)>;             layers = <0>; };
+        combo_sym_5k    { key-positions = <17 12   >; bindings = <&kp LS(N5)>;             layers = <0>; };
+        combo_sym_6k    { key-positions = <17 13   >; bindings = <&kp LS(N6)>;             layers = <0>; };
+        combo_sym_7k    { key-positions = <17 01   >; bindings = <&kp LS(N7)>;             layers = <0>; };
+        combo_sym_8k    { key-positions = <17 02   >; bindings = <&kp LS(N8)>;             layers = <0>; };
+        combo_sym_9k    { key-positions = <17 03   >; bindings = <&kp LS(N9)>;             layers = <0>; };
+        combo_sym_0k    { key-positions = <17 14   >; bindings = <&kp LS(N0)>;             layers = <0>; };
+        combo_sym_1k_r  { key-positions = <47 21   >; bindings = <&kp LS(N1)>;             layers = <0>; };
+        combo_sym_2k_r  { key-positions = <47 22   >; bindings = <&kp LS(N2)>;             layers = <0>; };
+        combo_sym_3k_r  { key-positions = <47 23   >; bindings = <&kp LS(N3)>;             layers = <0>; };
+        combo_sym_4k_r  { key-positions = <47 11   >; bindings = <&kp LS(N4)>;             layers = <0>; };
+        combo_sym_5k_r  { key-positions = <47 12   >; bindings = <&kp LS(N5)>;             layers = <0>; };
+        combo_sym_6k_r  { key-positions = <47 13   >; bindings = <&kp LS(N6)>;             layers = <0>; };
+        combo_sym_7k_r  { key-positions = <47 01   >; bindings = <&kp LS(N7)>;             layers = <0>; };
+        combo_sym_8k_r  { key-positions = <47 02   >; bindings = <&kp LS(N8)>;             layers = <0>; };
+        combo_sym_9k_r  { key-positions = <47 03   >; bindings = <&kp LS(N9)>;             layers = <0>; };
+        combo_sym_0k_r  { key-positions = <47 14   >; bindings = <&kp LS(N0)>;             layers = <0>; };
+        combo_sym_1s    { key-positions = <34 21   >; bindings = <&kp LS(N1)>;             layers = <0>; };
+        combo_sym_2s    { key-positions = <34 22   >; bindings = <&kp LS(N2)>;             layers = <0>; };
+        combo_sym_3s    { key-positions = <34 23   >; bindings = <&kp LS(N3)>;             layers = <0>; };
+        combo_sym_4s    { key-positions = <34 11   >; bindings = <&kp LS(N4)>;             layers = <0>; };
+        combo_sym_5s    { key-positions = <34 12   >; bindings = <&kp LS(N5)>;             layers = <0>; };
+        combo_sym_6s    { key-positions = <34 13   >; bindings = <&kp LS(N6)>;             layers = <0>; };
+        combo_sym_7s    { key-positions = <34 01   >; bindings = <&kp LS(N7)>;             layers = <0>; };
+        combo_sym_8s    { key-positions = <34 02   >; bindings = <&kp LS(N8)>;             layers = <0>; };
+        combo_sym_9s    { key-positions = <34 03   >; bindings = <&kp LS(N9)>;             layers = <0>; };
+        combo_sym_0s    { key-positions = <34 14   >; bindings = <&kp LS(N0)>;             layers = <0>; };
     };
 
     //  00q 01w 02e 03r 04t         05y 06u 07i 08o 09p
