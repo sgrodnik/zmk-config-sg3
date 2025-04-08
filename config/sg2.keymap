@@ -44,6 +44,14 @@
             ;
         )
 
+        ZMK_MACRO(m_ct_tab, wait-ms = <30>; tap-ms = <40>; bindings
+            = <&macro_press   &kp LCTRL>
+            , <&macro_tap     &kp TAB>
+            , <&macro_pause_for_release>
+            , <&macro_release &kp LCTRL>
+            ;
+        )
+
         #define short_m wait-ms = <20>; tap-ms = <20>; bindings =
 
         ZMK_MACRO(m_copy_all,   short_m <&macro_tap &kp LC(HOME) &kp LC(LS(END)) &kp LC(INS) &kp LC(C)>                         ; )
@@ -240,10 +248,13 @@
         combo_colonE   { key-positions = <04 14   >; bindings = <&m_semicolon_end>;      layers = <0>; };  // TG
         combo_repeat   { key-positions = <02 03   >; bindings = <&key_repeat >;          layers = <0>; };  // ER
         combo_al_tab   { key-positions = <11 33   >; bindings = <&m_al_tab >;            layers = <0>; slow-release; };  // Stab
+        combo_ct_tab   { key-positions = <13 33   >; bindings = <&m_ct_tab >;            layers = <0>; slow-release; };  // Ftab
         combo_copy_all { key-positions = <21 22   >; bindings = <&ht_copy_all 0 0>;      layers = <0>; };  // XC
         combo_paste_all{ key-positions = <22 23   >; bindings = <&ht_paste_all 0 0>;     layers = <0>; };  // CV
         combo_cut_all  { key-positions = <20 21   >; bindings = <&ht_cut_all 0 0>;       layers = <0>; };  // ZX
         combo_bsp_line { key-positions = <11 12   >; bindings = <&ht_backsp_line 0 0>;   layers = <0 1>; };// SD
+        combo_bsp_lineR{ key-positions = <17 18   >; bindings = <&ht_backsp_line 0 0>;   layers = <0 1>; };// KL
+        combo_bsp_lin_r{ key-positions = <47 48   >; bindings = <&ht_backsp_line 0 0>;   layers = <0 1>; };// KL
         combo_clip_man { key-positions = <21 22 23>; bindings = <&ht_clip_man 0 0>;      layers = <0>; };  // XCV
         combo_undo     { key-positions = <10 11   >; bindings = <&ht_undo_redo 0 0>;     layers = <0>; };  // AS
         combo_back_clos{ key-positions = <11 12   >; bindings = <&ht_back_clos 0 0>;     layers = <2>; };  // SD
