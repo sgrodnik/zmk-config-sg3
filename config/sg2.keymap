@@ -390,13 +390,13 @@
 //                                                                               ╭── 55     ──┼─ 56      ──┼──       ──┴──       ──┴──      ──┴──         ──╯
                                                                                  &trans       &trans       >; };
 //                                                                               ╰──        ──┴──        ──╯
-        layer3Fun { bindings = <
+        layer3Browser { bindings = <
 //╭─00─       ──┬─01─      ──┬─02─      ──┬─03─      ──┬─04─      ──╮                         ╭─05─      ──┬─06─     ──┬─07─     ──┬─08─    ──┬─09─      ──╮
-  &kp C_BRI_UP  &kp F7       SCRL_U       &kp F9       &kp F10                                &out OUT_USB &out OUT_BLE &trans &studio_unlock &bootloader
+  &m_ct_tab     &kp LC(W)    SCRL_U       &kp LS(LC(T)) &kp LC(T)                              &out OUT_USB &out OUT_BLE &trans &studio_unlock &bootloader
 //├─10─       ──┼─11─      ──┼─12─      ──┼─13       ──┼─14─      ──┤                         ├─15─      ──┼─16─     ──┼─17─     ──┼─18─    ──┼─19─      ──┤
-  &kp C_BRI_DN  SCRL_L       SCRL_D       SCRL_R       &kp F11                                &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
+  &kp LA(LEFT)  SCRL_L       SCRL_D       SCRL_R       &trans                                 &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
 //├─20─       ──┼─21─      ──┼─22─      ──┼─23       ──┼─24─      ──┤                         ├─25─      ──┼─26─     ──┼─27─     ──┼─28─    ──┼─29─      ──┤
-  &trans        &kp F1       &kp F2       &kp F3       &kp F12                                &bt BT_CLR   &trans      &trans      &ind_bat   &ind_con
+  &trans       &kp LC(PG_UP) &kp LC(PG_DN) &trans      &trans                                 &bt BT_CLR   &trans      &trans      &ind_bat   &ind_con
 //╰──         ──┼── 30     ──┴── 31     ──┼── 32     ──┼── 33     ──┼── 34    ──╮╭── 35     ──┼── 36     ──┼── 37    ──┼── 38    ──┼── 39   ──┴──        ──╯
                 &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans      &trans      &trans
 //              ╰──        ──┴──        ──┴──        ──┴──        ──┴──       ──╯╰──        ──┴──        ──┴──       ──┴──       ──┴──      ──╯
