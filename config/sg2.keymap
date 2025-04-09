@@ -15,6 +15,8 @@
 #define hL    RALT   L
 #define hSEMI RGUI   SEMI
 
+#define ZMK_POINTING_DEFAULT_SCRL_VAL 20
+
 &num_word {
   continue-list = <BSPC DEL DOT COMMA PLUS MINUS STAR FSLH EQUAL SPACE>;
   ignore-modifiers;
@@ -72,6 +74,7 @@
         ZMK_MACRO(m_clip_prev,  short_m <&macro_tap &kp LG(V)>, <&macro_wait_time 200>, <&macro_tap &kp DOWN &kp DOWN &kp RET>  ; )
         ZMK_MACRO(m_search,     short_m <&macro_tap &kp LC(C) &kp LC(F) &kp LC(V)>                                              ; )
         ZMK_MACRO(macro1,       short_m <&macro_tap &kp STAR &kp LS(U) &kp LPAR &kp LS(I) &kp RPAR &kp LS(O) &kp UNDER &kp RET> ; )
+        ZMK_MACRO(m_dblclk,     short_m <&macro_tap &mkp LCLK &mkp LCLK> ; )
 
         ZMK_MACRO(m_dot,          short_m <&macro_press &kp LALT>, <&macro_tap &kp KP_N4 &kp KP_N6>, <&macro_release &kp LALT>; ) // Alt + 46 = .
         ZMK_MACRO(m_com,          short_m <&macro_press &kp LALT>, <&macro_tap &kp KP_N4 &kp KP_N4>, <&macro_release &kp LALT>; ) // Alt + 44 = ,
@@ -189,6 +192,13 @@
             continue-list = <LEFT DOWN UP RIGHT PG_DN PG_UP HOME END>;
             ignore-modifiers;
         };
+
+        &msc {
+            x-input-code = <INPUT_REL_HWHEEL>;
+            y-input-code = <INPUT_REL_WHEEL>;
+            time-to-max-speed-ms = <500>;
+            acceleration-exponent = <1>;
+        };
     };
 
 
@@ -289,6 +299,11 @@
         combo_sym_8s    { key-positions = <34 02   >; bindings = <&kp LS(N8)>;             layers = <0>; };
         combo_sym_9s    { key-positions = <34 03   >; bindings = <&kp LS(N9)>;             layers = <0>; };
         combo_sym_0s    { key-positions = <34 14   >; bindings = <&kp LS(N0)>;             layers = <0>; };
+
+        combo_lclk      { key-positions = <12 13   >; bindings = <&mkp LCLK >;             layers = <3>; slow-release; };  // DF
+        combo_rclk      { key-positions = <11 12   >; bindings = <&mkp RCLK >;             layers = <3>; slow-release; };  // SD
+        combo_mclk      { key-positions = <11 13   >; bindings = <&mkp MCLK >;             layers = <3>; slow-release; };  // SF
+        combo_mclk      { key-positions = <11 12 13>; bindings = <&mkp MB4  >;             layers = <3>; slow-release; };  // SDF
     };
 
     //  00q 01w 02e 03r 04t         05y 06u 07i 08o 09p
@@ -394,7 +409,7 @@
 //╭─00─       ──┬─01─      ──┬─02─      ──┬─03─      ──┬─04─      ──╮                         ╭─05─      ──┬─06─     ──┬─07─     ──┬─08─    ──┬─09─      ──╮
   &m_ct_tab     &kp LC(W)    SCRL_U       &kp LS(LC(T)) &kp LC(T)                              &out OUT_USB &out OUT_BLE &trans &studio_unlock &bootloader
 //├─10─       ──┼─11─      ──┼─12─      ──┼─13       ──┼─14─      ──┤                         ├─15─      ──┼─16─     ──┼─17─     ──┼─18─    ──┼─19─      ──┤
-  &kp LA(LEFT)  SCRL_L       SCRL_D       SCRL_R       &trans                                 &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
+  &kp LA(LEFT)  SCRL_L       SCRL_D       SCRL_R       &m_dblclk                              &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
 //├─20─       ──┼─21─      ──┼─22─      ──┼─23       ──┼─24─      ──┤                         ├─25─      ──┼─26─     ──┼─27─     ──┼─28─    ──┼─29─      ──┤
   &mkp MCLK    &kp LC(PG_UP) &kp LC(PG_DN) &mkp LCLK   &mkp RCLK                              &bt BT_CLR   &trans      &trans      &ind_bat   &ind_con
 //╰──         ──┼── 30     ──┴── 31     ──┼── 32     ──┼── 33     ──┼── 34    ──╮╭── 35     ──┼── 36     ──┼── 37    ──┼── 38    ──┼── 39   ──┴──        ──╯
