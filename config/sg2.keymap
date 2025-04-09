@@ -302,10 +302,10 @@
         combo_sym_9s    { key-positions = <34 03   >; bindings = <&kp LS(N9)>;             layers = <0>; };
         combo_sym_0s    { key-positions = <34 14   >; bindings = <&kp LS(N0)>;             layers = <0>; };
 
-        combo_lclk      { key-positions = <12 13   >; bindings = <&mkp LCLK >;             layers = <3>; slow-release; };  // DF
-        combo_rclk      { key-positions = <11 12   >; bindings = <&mkp RCLK >;             layers = <3>; slow-release; };  // SD
-        combo_mclk      { key-positions = <11 13   >; bindings = <&mkp MCLK >;             layers = <3>; slow-release; };  // SF
-        combo_mclk      { key-positions = <11 12 13>; bindings = <&mkp MB4  >;             layers = <3>; slow-release; };  // SDF
+        combo_lclk      { key-positions = <12 13   >; bindings = <&mkp LCLK >;             layers = <3>; };  // DF
+        combo_rclk      { key-positions = <11 12   >; bindings = <&mkp RCLK >;             layers = <3>; };  // SD
+        combo_mclk      { key-positions = <11 13   >; bindings = <&mkp MCLK >;             layers = <3>; };  // SF
+        combo_4clk      { key-positions = <11 12 13>; bindings = <&mkp MB4  >;             layers = <3>; };  // SDF
     };
 
     //  00q 01w 02e 03r 04t         05y 06u 07i 08o 09p
