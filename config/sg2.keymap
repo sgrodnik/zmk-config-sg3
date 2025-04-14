@@ -311,11 +311,11 @@
 
         combo_bt0       { key-positions = <15 20   >; bindings = <&bt BT_SEL 0>;           layers = <0>; };  // HN
         combo_bt1       { key-positions = <16 21   >; bindings = <&bt BT_SEL 1>;           layers = <0>; };  // JM
-        combo_bt2       { key-positions = <17 22   >; bindings = <&bt BT_SEL 2>;           layers = <0>; };  // K<
+        combo_bt2       { key-positions = <17 22   >; bindings = <&bt BT_SEL 2>;           layers = <0>; };  // K
         combo_out_tog   { key-positions = <05 06   >; bindings = <&bt OUT_TOG>;            layers = <0>; };  // YU
         combo_bt0_r     { key-positions = <45 50   >; bindings = <&bt BT_SEL 0>;           layers = <0>; };  // HN
         combo_bt1_r     { key-positions = <46 51   >; bindings = <&bt BT_SEL 1>;           layers = <0>; };  // JM
-        combo_bt2_r     { key-positions = <47 52   >; bindings = <&bt BT_SEL 2>;           layers = <0>; };  // K<
+        combo_bt2_r     { key-positions = <47 52   >; bindings = <&bt BT_SEL 2>;           layers = <0>; };  // K
         combo_out_tog_r { key-positions = <40 41   >; bindings = <&bt OUT_TOG>;            layers = <0>; };  // YU
     };
 
