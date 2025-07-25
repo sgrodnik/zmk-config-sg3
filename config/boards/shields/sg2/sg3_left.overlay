@@ -20,3 +20,14 @@
         , <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         ;
 };
+
+&encoders {
+    status = "okay";
+    encoder_1: encoder_1 {
+        compatible = "alps,ec11";
+        label = "ENCODER_1";
+        a-gpios = <&gpio1 1 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        b-gpios = <&gpio1 2 (GPIO_ACTIVE_HIGH | GPIO_PULL_UP)>;
+        steps = <4>;
+    };
+};
