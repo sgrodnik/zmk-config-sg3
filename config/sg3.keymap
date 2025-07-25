@@ -376,7 +376,7 @@
 //                                        ╰──        ──┴──        ──┴──       ──╯╰──        ──┴──        ──╯
         layer3Browser { sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>; bindings = <
 //╭─00        ──┬─01       ──┬─02       ──┬─03       ──┬─04       ──╮                         ╭─05       ──┬─06      ──┬─07      ──┬─08     ──┬─09       ──╮
-  &m_ct_tab     &kp LC(W)    SCRL_U       btl_cst      &kp LC(T)                              &out OUT_USB &out OUT_BLE &trans &studio_unlock &bootloader
+  &m_ct_tab     &kp LC(W)    SCRL_U       &bootloader      &kp LC(T)                              &out OUT_USB &out OUT_BLE &trans &studio_unlock &bootloader
 //├─10        ──┼─11       ──┼─12       ──┼─1        ──┼─14       ──┤                         ├─15       ──┼─16      ──┼─17      ──┼─18     ──┼─19       ──┤
   &kp LA(LEFT)  SCRL_L       SCRL_D       SCRL_R       &m_dblclk                              &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
 //├─20        ──┼─21       ──┼─22       ──┼─2        ──┼─24       ──┤                         ├─25       ──┼─26      ──┼─27      ──┼─28     ──┼─29       ──┤
