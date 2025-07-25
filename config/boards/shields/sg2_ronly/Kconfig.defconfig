@@ -1,6 +1,0 @@
-if SHIELD_SG3_RONLY
-
-config ZMK_KEYBOARD_NAME
-    default "sg3_ronly"
-
-endif

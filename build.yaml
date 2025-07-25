@@ -27,7 +27,3 @@ include:
     shield: sg3_right
     artifact-name: sg3_right
     snippet: studio-rpc-usb-uart
-  - board: nice_nano_v2
-    shield: sg3_ronly
-    artifact-name: sg3_ronly
-    snippet: studio-rpc-usb-uart
