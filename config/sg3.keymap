@@ -144,11 +144,11 @@
 
 
     behaviors {
-        rot_kp: sensor_rotate_kp {
-              compatible = "zmk,behavior-sensor-rotate-var";
-              #sensor-binding-cells = <2>;
-              bindings = <&kp>, <&kp>;
-          };
+        // rot_kp: sensor_rotate_kp {
+        //       compatible = "zmk,behavior-sensor-rotate-var";
+        //       #sensor-binding-cells = <2>;
+        //       bindings = <&kp>, <&kp>;
+        //   };
 
         ht: left_positional_hold_tap {  // allows shift with mouse
             compatible = "zmk,behavior-hold-tap";
@@ -322,7 +322,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default0 { sensor-bindings = <&rot_kp C_VOL_UP C_VOL_DN>; bindings = <
+        default0 { sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>; bindings = <
 //╭──00       ──┬─01       ──┬─02       ──┬─03       ──┬─04       ──╮                        ╭──05       ──┬─06      ──┬─07      ──┬─08     ──┬─09         ──╮
   &kp Q         &kp W        &kp E        &kp R        &kp T                                 &kp Y         &kp U       &kp I       &kp O      &kp P
 //├──10       ──┼─11       ──┼─12       ──┼─13       ──┼─14       ──┤                        ├──15       ──┼─16      ──┼─17      ──┼─18     ──┼─19         ──┤
@@ -337,7 +337,7 @@
 #define mt_min_plus      mt PLUS         MINUS
 #define mt_equal_gr      mt GRAVE        EQUAL
 #define mt_slsh_star     mt STAR         KP_SLASH
-        layer1Num { sensor-bindings = <&rot_kp C_BRI_UP C_BRI_DN>; bindings = <
+        layer1Num { sensor-bindings = <&inc_dec_kp C_BRI_UP C_BRI_DN>; bindings = <
 //╭─00        ──┬─01       ──┬─02       ──┬─03       ──┬─04       ──╮                         ╭─05       ──┬─06      ──┬─07      ──┬─08     ──┬─09       ──╮
   &mt_equal_gr  &mt F7 N7    &mt F8 N8    &mt F9 N9    &ht_dot 0 0                            &msc SCRL_UP &trans      &kp INSERT  &trans     &kp PSCRN
 //├─10        ──┼─11       ──┼─12       ──┼─13       ──┼─14       ──┤                         ├─15       ──┼─16      ──┼─17      ──┼─18     ──┼─19       ──┤
@@ -364,7 +364,7 @@
 #define mmv_R   &mmv MOVE_RIGHT
 #define CS      LS(LCTRL)
 #define btl_cst &hm bootloader LS(LC(T))
-        layer2Nav { sensor-bindings = <&rot_kp PG_UP PG_DN>; bindings = <
+        layer2Nav { sensor-bindings = <&inc_dec_kp PG_UP PG_DN>; bindings = <
 //╭─00        ──┬─01       ──┬─02       ──┬─03       ──┬─04       ──╮                         ╭─05       ──┬─06      ──┬─07      ──┬─08     ──┬─09       ──╮
   &hm CS B_UP   &mt LC_HOME  &kp UP       &mt LC_END   &kp PG_UP                              &trans       &trans      &kp UP      &trans     &bootloader
 //├─10        ──┼─11       ──┼─12       ──┼─13       ──┼─14       ──┤                         ├─15       ──┼─16      ──┼─17      ──┼─18     ──┼─19       ──┤
@@ -374,7 +374,7 @@
 //╰──         ──┴──        ──┴──        ──┼─30       ──┼─31       ──┼─32      ──╮╭──33      ──┼─34       ──┼──       ──┴──       ──┴──      ──┴──        ──╯
                                           &trans       &trans       &trans       &trans       &trans       >; };
 //                                        ╰──        ──┴──        ──┴──       ──╯╰──        ──┴──        ──╯
-        layer3Browser { sensor-bindings = <&rot_kp trans trans>; bindings = <
+        layer3Browser { sensor-bindings = <&inc_dec_kp trans trans>; bindings = <
 //╭─00        ──┬─01       ──┬─02       ──┬─03       ──┬─04       ──╮                         ╭─05       ──┬─06      ──┬─07      ──┬─08     ──┬─09       ──╮
   &m_ct_tab     &kp LC(W)    SCRL_U       btl_cst      &kp LC(T)                              &out OUT_USB &out OUT_BLE &trans &studio_unlock &bootloader
 //├─10        ──┼─11       ──┼─12       ──┼─1        ──┼─14       ──┤                         ├─15       ──┼─16      ──┼─17      ──┼─18     ──┼─19       ──┤
@@ -385,7 +385,7 @@
                                           &trans       &trans       &trans       &trans       &trans       >; };
 //                                        ╰──        ──┴──        ──┴──       ──╯╰──        ──┴──        ──╯
 
-        layer4MouseTest { sensor-bindings = <&rot_kp trans trans>; bindings = <
+        layer4MouseTest { sensor-bindings = <&inc_dec_kp trans trans>; bindings = <
 //╭─00        ──┬─01       ──┬─02       ──┬─03       ──┬─04        ──╮                        ╭─05       ──┬─06      ──┬─07      ──┬─08     ──┬─09       ──╮
   &trans        &trans       mmv_U        &trans       &trans                                 &trans       &trans      &trans      &trans     &trans
 //├─10        ──┼─11       ──┼─12       ──┼─13       ──┼─14        ──┤                        ├─15       ──┼─16      ──┼─17      ──┼─18     ──┼─19       ──┤
@@ -395,7 +395,7 @@
 //╰──         ──┴──        ──┴──        ──┼─30       ──┼─31       ──┼─32      ──╮╭──33      ──┼─34       ──┼──       ──┴──       ──┴──      ──┴──        ──╯
                                           &trans       &trans       &trans       &trans       &trans       >; };
 //                                        ╰──        ──┴──        ──┴──       ──╯╰──        ──┴──        ──╯
-//         layerTemplate { sensor-bindings = <&rot_kp trans trans>; bindings = <
+//         layerTemplate { sensor-bindings = <&inc_dec_kp trans trans>; bindings = <
 // //╭─00        ──┬─01       ──┬─02       ──┬─03       ──┬─04       ──╮                         ╭─05       ──┬─06      ──┬─07      ──┬─08     ──┬─09       ──╮
 //   &trans        &trans       &trans       &trans       &trans                                 &trans       &trans      &trans      &trans     &trans
 // //├─10        ──┼─11       ──┼─12       ──┼─13       ──┼─14       ──┤                         ├─15       ──┼─16      ──┼─17      ──┼─18     ──┼─19       ──┤
