@@ -1,7 +1,7 @@
 #include "sg3.dtsi"
 
 &default_transform {
-    col-offset = <10>;
+    col-offset = <5>;
 };
 
 &kscan0 {
