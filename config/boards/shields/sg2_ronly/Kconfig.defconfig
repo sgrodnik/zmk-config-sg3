@@ -1,6 +1,6 @@
-if SHIELD_SG2_RONLY
+if SHIELD_SG3_RONLY
 
 config ZMK_KEYBOARD_NAME
-    default "sg2_ronly"
+    default "sg3_ronly"
 
 endif

@@ -1,15 +1,15 @@
-if SHIELD_SG2_LEFT
+if SHIELD_SG3_LEFT
 
 # Name must be less than 16 characters long!
 config ZMK_KEYBOARD_NAME
-    default "sg2"
+    default "sg3"
 
 config ZMK_SPLIT_ROLE_CENTRAL
     default y
 
 endif
 
-if SHIELD_SG2_LEFT || SHIELD_SG2_RIGHT
+if SHIELD_SG3_LEFT || SHIELD_SG3_RIGHT
 
 config ZMK_SPLIT
     default y

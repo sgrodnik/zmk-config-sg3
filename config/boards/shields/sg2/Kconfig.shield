@@ -1,5 +1,5 @@
-config SHIELD_SG2_LEFT
-    def_bool $(shields_list_contains,sg2_left)
+config SHIELD_SG3_LEFT
+    def_bool $(shields_list_contains,sg3_left)
 
-config SHIELD_SG2_RIGHT
-    def_bool $(shields_list_contains,sg2_right)
+config SHIELD_SG3_RIGHT
+    def_bool $(shields_list_contains,sg3_right)

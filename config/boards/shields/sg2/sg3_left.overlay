@@ -1,4 +1,4 @@
-#include "sg2.dtsi"
+#include "sg3.dtsi"
 
 &kscan0 {
     col-gpios

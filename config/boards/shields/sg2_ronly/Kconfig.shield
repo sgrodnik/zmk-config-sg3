@@ -1,2 +1,2 @@
-config SHIELD_SG2_RONLY
-    def_bool $(shields_list_contains,sg2_ronly)
+config SHIELD_SG3_RONLY
+    def_bool $(shields_list_contains,sg3_ronly)

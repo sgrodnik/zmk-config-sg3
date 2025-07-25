@@ -20,14 +20,14 @@
 ---
 include:
   - board: nice_nano_v2
-    shield: sg2_left
-    artifact-name: sg2_left
+    shield: sg3_left
+    artifact-name: sg3_left
     snippet: studio-rpc-usb-uart
   - board: nice_nano_v2
-    shield: sg2_right
-    artifact-name: sg2_right
+    shield: sg3_right
+    artifact-name: sg3_right
     snippet: studio-rpc-usb-uart
   - board: nice_nano_v2
-    shield: sg2_ronly
-    artifact-name: sg2_ronly
+    shield: sg3_ronly
+    artifact-name: sg3_ronly
     snippet: studio-rpc-usb-uart
