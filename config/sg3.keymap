@@ -358,9 +358,10 @@
 #define mmv_L   &mmv MOVE_LEFT
 #define mmv_R   &mmv MOVE_RIGHT
 #define CS      LS(LCTRL)
+#define btl_cst &hm bootloader LS(LC(T))
         layer2Nav { bindings = <
 //╭─00        ──┬─01       ──┬─02       ──┬─03       ──┬─04       ──╮                         ╭─05       ──┬─06      ──┬─07      ──┬─08     ──┬─09       ──╮
-  &hm CS B_UP   &mt LC_HOME  &kp UP       &mt LC_END   &kp PG_UP                              &trans       &trans      &kp UP      &trans     &trans
+  &hm CS B_UP   &mt LC_HOME  &kp UP       &mt LC_END   &kp PG_UP                              &trans       &trans      &kp UP      &trans     &bootloader
 //├─10        ──┼─11       ──┼─12       ──┼─13       ──┼─14       ──┤                         ├─15       ──┼─16      ──┼─17      ──┼─18     ──┼─19       ──┤
  &hm LSHFT B_DN &kp LEFT     &kp DOWN     &kp RIGHT    &kp PG_DN                              &kp HOME     &kp LEFT    &kp DOWN    &kp RIGHT  &kp END
 //├─20        ──┼─21       ──┼─22       ──┼─23       ──┼─24       ──┤                         ├─25       ──┼─26      ──┼─27      ──┼─28     ──┼─29       ──┤
@@ -370,7 +371,7 @@
 //                                        ╰──        ──┴──        ──┴──       ──╯╰──        ──┴──        ──╯
         layer3Browser { bindings = <
 //╭─00        ──┬─01       ──┬─02       ──┬─03       ──┬─04       ──╮                         ╭─05       ──┬─06      ──┬─07      ──┬─08     ──┬─09       ──╮
-  &m_ct_tab     &kp LC(W)    SCRL_U       &kp LS(LC(T)) &kp LC(T)                              &out OUT_USB &out OUT_BLE &trans &studio_unlock &bootloader
+  &m_ct_tab     &kp LC(W)    SCRL_U       btl_cst      &kp LC(T)                              &out OUT_USB &out OUT_BLE &trans &studio_unlock &bootloader
 //├─10        ──┼─11       ──┼─12       ──┼─1        ──┼─14       ──┤                         ├─15       ──┼─16      ──┼─17      ──┼─18     ──┼─19       ──┤
   &kp LA(LEFT)  SCRL_L       SCRL_D       SCRL_R       &m_dblclk                              &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
 //├─20        ──┼─21       ──┼─22       ──┼─2        ──┼─24       ──┤                         ├─25       ──┼─26      ──┼─27      ──┼─28     ──┼─29       ──┤
