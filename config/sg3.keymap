@@ -374,7 +374,7 @@
 //╰──         ──┴──        ──┴──        ──┼─30       ──┼─31       ──┼─32      ──╮╭──33      ──┼─34       ──┼──       ──┴──       ──┴──      ──┴──        ──╯
                                           &trans       &trans       &trans       &trans       &trans       >; };
 //                                        ╰──        ──┴──        ──┴──       ──╯╰──        ──┴──        ──╯
-        layer3Browser { sensor-bindings = <&inc_dec_kp trans trans>; bindings = <
+        layer3Browser { sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>; bindings = <
 //╭─00        ──┬─01       ──┬─02       ──┬─03       ──┬─04       ──╮                         ╭─05       ──┬─06      ──┬─07      ──┬─08     ──┬─09       ──╮
   &m_ct_tab     &kp LC(W)    SCRL_U       btl_cst      &kp LC(T)                              &out OUT_USB &out OUT_BLE &trans &studio_unlock &bootloader
 //├─10        ──┼─11       ──┼─12       ──┼─1        ──┼─14       ──┤                         ├─15       ──┼─16      ──┼─17      ──┼─18     ──┼─19       ──┤
@@ -385,7 +385,7 @@
                                           &trans       &trans       &trans       &trans       &trans       >; };
 //                                        ╰──        ──┴──        ──┴──       ──╯╰──        ──┴──        ──╯
 
-        layer4MouseTest { sensor-bindings = <&inc_dec_kp trans trans>; bindings = <
+        layer4MouseTest { sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>; bindings = <
 //╭─00        ──┬─01       ──┬─02       ──┬─03       ──┬─04        ──╮                        ╭─05       ──┬─06      ──┬─07      ──┬─08     ──┬─09       ──╮
   &trans        &trans       mmv_U        &trans       &trans                                 &trans       &trans      &trans      &trans     &trans
 //├─10        ──┼─11       ──┼─12       ──┼─13       ──┼─14        ──┤                        ├─15       ──┼─16      ──┼─17      ──┼─18     ──┼─19       ──┤
@@ -395,7 +395,7 @@
 //╰──         ──┴──        ──┴──        ──┼─30       ──┼─31       ──┼─32      ──╮╭──33      ──┼─34       ──┼──       ──┴──       ──┴──      ──┴──        ──╯
                                           &trans       &trans       &trans       &trans       &trans       >; };
 //                                        ╰──        ──┴──        ──┴──       ──╯╰──        ──┴──        ──╯
-//         layerTemplate { sensor-bindings = <&inc_dec_kp trans trans>; bindings = <
+//         layerTemplate { sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>; bindings = <
 // //╭─00        ──┬─01       ──┬─02       ──┬─03       ──┬─04       ──╮                         ╭─05       ──┬─06      ──┬─07      ──┬─08     ──┬─09       ──╮
 //   &trans        &trans       &trans       &trans       &trans                                 &trans       &trans      &trans      &trans     &trans
 // //├─10        ──┼─11       ──┼─12       ──┼─13       ──┼─14       ──┤                         ├─15       ──┼─16      ──┼─17      ──┼─18     ──┼─19       ──┤
