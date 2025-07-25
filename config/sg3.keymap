@@ -230,7 +230,7 @@
         combo_bslh     { key-positions = <28 29   >; bindings = <&kp BSLH     >; layers = <0  >; };  // >?
         combo_apos     { key-positions = <18 19   >; bindings = <&kp APOS     >; layers = <0  >; };  // L:
         combo_escR2    { key-positions = <19 29   >; bindings = <&kp ESC      >; layers = <0  >; };  // ;/
-        combo_retR2    { key-positions = <09 19   >; bindings = <&kp RET      >; layers = <0  >; };  // p;
+        combo_retR2    { key-positions = < 9 19   >; bindings = <&kp RET      >; layers = <0  >; };  // p;
         combo_task     { key-positions = <00 01   >; bindings = <&task_manager>; layers = <0  >; };  // QW
         combo_cshf     { key-positions = <20 13   >; bindings = <&sk LS(LCTRL)>; layers = <0  >; };  // ZF
         combo_c        { key-positions = <00 13   >; bindings = <&sk LCTRL    >; layers = <0  >; };  // QF
