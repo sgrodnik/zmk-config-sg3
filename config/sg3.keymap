@@ -242,8 +242,8 @@
         combo_c        { key-positions = <00 13   >; bindings = <&sk LCTRL    >; layers = <0  >; };  // QF
         combo_macro1   { key-positions = < 7 16   >; bindings = <&macro1      >; layers = <0  >; };  // IJ
         combo_macro1_r { key-positions = <42 46   >; bindings = <&macro1      >; layers = <0  >; };  // IJ
-        combo_shift1   { key-positions = <12 34   >; bindings = <&layer_mod 1 LSHIFT>; layers = <0>; slow-release;};  // Dspace
-        combo_ctrl1    { key-positions = <13 34   >; bindings = <&layer_mod 1 LCTRL >; layers = <0>; slow-release;};  // Fspace
+        combo_shift1   { key-positions = <12 32   >; bindings = <&layer_mod 1 LSHIFT>; layers = <0>; slow-release;};  // Dspace
+        combo_ctrl1    { key-positions = <13 32   >; bindings = <&layer_mod 1 LCTRL >; layers = <0>; slow-release;};  // Fspace
         combo_capsw    { key-positions = <10 20   >; bindings = <&caps_word>;            layers = <0>; };  // AZ
         combo_capsw2   { key-positions = <12 17   >; bindings = <&caps_word>;            layers = <0>; };  // DK
         combo_capsw2_r { key-positions = <12 47   >; bindings = <&caps_word>;            layers = <0>; };  // DK
@@ -251,11 +251,7 @@
     //  00q 01w 02e 03r 04t         05y 06u 07i 08o 09p
     //  10a 11s 12d 13f 14g         15h 16j 17k 18l 19;
     //  20z 21x 22c 23v 24b         25n 26m 27, 28. 29/
-    //      30  31  32  33t 34s 35s 36r 37e 38 39
-    //                              40y 41u 42i 43o 44p
-    //                              45h 46j 47k 48l 49;
-    //                              50n 51m 52, 53. 54/
-    //                          55s 56r
+    //              30  31t 32s 33s 34r
         combo_brack2   { key-positions = <13 14   >; bindings = <&ht_brace_angle   0 0>; layers = <0>; };  // FG
         combo_caps_bs  { key-positions = <10 13   >; bindings = <&ht_bs_caps       0 0>; layers = <0>; };  // AF
         combo_colon    { key-positions = <03 13   >; bindings = <&ht_semi_colon    0 0>; layers = <0>; };  // RF
@@ -263,12 +259,12 @@
         combo_under    { key-positions = <13 23   >; bindings = <&mt_under_minus      >; layers = <0>; };  // FV
         combo_slash    { key-positions = <23 24   >; bindings = <&ht_slash         0 0>; layers = <0>; };  // VB
         combo_search   { key-positions = <22 13   >; bindings = <&m_search>;             layers = <0>; };  // CF
-        combo_num_wo   { key-positions = <14 34   >; bindings = <&num_word 1>;           layers = <0>; };  // Gspace
-        combo_nav_wo   { key-positions = <14 33   >; bindings = <&nav_word 2>;           layers = <0>; };  // Gtab
+        combo_num_wo   { key-positions = <14 32   >; bindings = <&num_word 1>;           layers = <0>; };  // Gspace
+        combo_nav_wo   { key-positions = <14 31   >; bindings = <&nav_word 2>;           layers = <0>; };  // Gtab
         combo_colonE   { key-positions = <04 14   >; bindings = <&m_semicolon_end>;      layers = <0>; };  // TG
         combo_repeat   { key-positions = <02 03   >; bindings = <&key_repeat >;          layers = <0>; };  // ER
-        combo_al_tab   { key-positions = <11 33   >; bindings = <&m_al_tab >;            layers = <0>; slow-release; };  // Stab
-        combo_ct_tab   { key-positions = <13 33   >; bindings = <&m_ct_tab >;            layers = <0>; slow-release; };  // Ftab
+        combo_al_tab   { key-positions = <11 31   >; bindings = <&m_al_tab >;            layers = <0>; slow-release; };  // Stab
+        combo_ct_tab   { key-positions = <13 31   >; bindings = <&m_ct_tab >;            layers = <0>; slow-release; };  // Ftab
         combo_copy_all { key-positions = <21 22   >; bindings = <&ht_copy_all 0 0>;      layers = <0>; };  // XC
         combo_paste_all{ key-positions = <22 23   >; bindings = <&ht_paste_all 0 0>;     layers = <0>; };  // CV
         combo_cut_all  { key-positions = <20 21   >; bindings = <&ht_cut_all 0 0>;       layers = <0>; };  // ZX
@@ -299,16 +295,16 @@
         combo_sym_8k_r  { key-positions = <47 02   >; bindings = <&kp LS(N8)>;             layers = <0>; };
         combo_sym_9k_r  { key-positions = <47 03   >; bindings = <&kp LS(N9)>;             layers = <0>; };
         combo_sym_0k_r  { key-positions = <47 14   >; bindings = <&kp LS(N0)>;             layers = <0>; };
-        combo_sym_1s    { key-positions = <34 21   >; bindings = <&kp LS(N1)>;             layers = <0>; };
-        combo_sym_2s    { key-positions = <34 22   >; bindings = <&kp LS(N2)>;             layers = <0>; };
-        combo_sym_3s    { key-positions = <34 23   >; bindings = <&kp LS(N3)>;             layers = <0>; };
-        combo_sym_4s    { key-positions = <34 11   >; bindings = <&kp LS(N4)>;             layers = <0>; };
-        combo_sym_5s    { key-positions = <34 12   >; bindings = <&kp LS(N5)>;             layers = <0>; };
-        combo_sym_6s    { key-positions = <34 13   >; bindings = <&kp LS(N6)>;             layers = <0>; };
-        combo_sym_7s    { key-positions = <34 01   >; bindings = <&kp LS(N7)>;             layers = <0>; };
-        combo_sym_8s    { key-positions = <34 02   >; bindings = <&kp LS(N8)>;             layers = <0>; };
-        combo_sym_9s    { key-positions = <34 03   >; bindings = <&kp LS(N9)>;             layers = <0>; };
-        combo_sym_0s    { key-positions = <34 14   >; bindings = <&kp LS(N0)>;             layers = <0>; };
+        combo_sym_1s    { key-positions = <32 21   >; bindings = <&kp LS(N1)>;             layers = <0>; };
+        combo_sym_2s    { key-positions = <32 22   >; bindings = <&kp LS(N2)>;             layers = <0>; };
+        combo_sym_3s    { key-positions = <32 23   >; bindings = <&kp LS(N3)>;             layers = <0>; };
+        combo_sym_4s    { key-positions = <32 11   >; bindings = <&kp LS(N4)>;             layers = <0>; };
+        combo_sym_5s    { key-positions = <32 12   >; bindings = <&kp LS(N5)>;             layers = <0>; };
+        combo_sym_6s    { key-positions = <32 13   >; bindings = <&kp LS(N6)>;             layers = <0>; };
+        combo_sym_7s    { key-positions = <32 01   >; bindings = <&kp LS(N7)>;             layers = <0>; };
+        combo_sym_8s    { key-positions = <32 02   >; bindings = <&kp LS(N8)>;             layers = <0>; };
+        combo_sym_9s    { key-positions = <32 03   >; bindings = <&kp LS(N9)>;             layers = <0>; };
+        combo_sym_0s    { key-positions = <32 14   >; bindings = <&kp LS(N0)>;             layers = <0>; };
 
         combo_lclk      { key-positions = <12 13   >; bindings = <&mkp LCLK >;             layers = <3>; };  // DF
         combo_rclk      { key-positions = <11 12   >; bindings = <&mkp RCLK >;             layers = <3>; };  // SD
@@ -328,11 +324,7 @@
     //  00q 01w 02e 03r 04t         05y 06u 07i 08o 09p
     //  10a 11s 12d 13f 14g         15h 16j 17k 18l 19;
     //  20z 21x 22c 23v 24b         25n 26m 27, 28. 29/
-    //      30  31  32  33t 34s 35s 36r 37e 38 39
-    //                              40y 41u 42i 43o 44p
-    //                              45h 46j 47k 48l 49;
-    //                              50n 51m 52, 53. 54/
-    //                          55s 56r
+    //              30  31t 32s 33s 34r
 
 
     //   888    d8P
@@ -352,48 +344,30 @@
         compatible = "zmk,keymap";
 
         default0 { bindings = <
-//╭── 00      ──┬── 01     ──┬── 02     ──┬── 03     ──┬── 04     ──╮                        ╭── 05      ──┬── 06    ──┬── 07    ──┬── 08   ──┬── 09       ──╮
+//╭──00       ──┬─01       ──┬─02       ──┬─03       ──┬─04       ──╮                        ╭──05       ──┬─06      ──┬─07      ──┬─08     ──┬─09         ──╮
   &kp Q         &kp W        &kp E        &kp R        &kp T                                 &kp Y         &kp U       &kp I       &kp O      &kp P
-//├── 10      ──┼── 11     ──┼── 12     ──┼── 13     ──┼── 14     ──┤                        ├── 15      ──┼── 16    ──┼── 17    ──┼── 18   ──┼── 19       ──┤
+//├──10       ──┼─11       ──┼─12       ──┼─13       ──┼─14       ──┤                        ├──15       ──┼─16      ──┼─17      ──┼─18     ──┼─19         ──┤
   &hm LGUI A    &hm LALT S   &hm LSHFT D  &hm LCTRL F  &kp G                                 &kp H         &hm hJ      &hm hK      &hm hL     &hm hSEMI
-//├── 20      ──┼── 21     ──┼── 22     ──┼── 23     ──┼── 24     ──┤                        ├── 25      ──┼── 26    ──┼── 27    ──┼── 28   ──┼── 29       ──┤
+//├──20       ──┼─21       ──┼─22       ──┼─23       ──┼─24       ──┤                        ├──25       ──┼─26      ──┼─27      ──┼─28     ──┼─29         ──┤
   &hm LSHFT Z   &hm LCTRL X  &kp C        &kp V        &kp B                                 &kp N         &kp M       &kp COMMA   &kp DOT    &hm RSHFT FSLH
-//╰──         ──┼── 30     ──┴── 31     ──┼── 32     ──┼── 33     ──┼── 34    ──╮╭── 35    ──┼── 36      ──┼── 37    ──┼── 38    ──┼── 39   ──┴──          ──╯
-                &trans       &mo 4        &mo 3        &tab2ctrl    &space1sh    &lt 1 SPACE &lt 2 RET     &lt 3 ESC   &mo 3       &num_word 1
-//              ╰──        ──┴──        ──┴──        ──┴──        ──┴──       ──╯╰──       ──┴──         ──┴──       ──┴──       ──┴──      ──╯
-//                                                                                           ╭── 40      ──┬── 41    ──┬── 42    ──┬── 43   ──┬── 44       ──╮
-                                                                                             &kp Y         &kp U       &kp I       &kp O      &kp P
-//                                                                                           ├── 45      ──┼── 46    ──┼── 47    ──┼── 48   ──┼── 49       ──┤
-                                                                                             &kp H         &hm hJ      &hm hK      &hm hL     &hm hSEMI
-//                                                                                           ├── 50      ──┼── 51    ──┼── 52    ──┼── 53   ──┼── 54       ──┤
-                                                                                             &kp N         &kp M       &kp COMMA   &kp DOT    &hm RSHFT FSLH
-//                                                                               ╭── 55    ──┼── 56      ──┼──       ──┴──       ──┴──      ──┴──          ──╯
-                                                                                 &lt 1 SPACE &lt 2 RET     >; };
-//                                                                               ╰──       ──┴──         ──╯
+//╰──         ──┴──        ──┴──        ──┼─30       ──┼─31       ──┼─32      ──╮╭──33     ──┼─34        ──┼──       ──┴──       ──┴──      ──┴──        ──╯
+                                          &mo 3        &tab2ctrl    &space1sh    &lt 1 SPACE &lt 2 RET     >; };
+//                                        ╰──        ──┴──        ──┴──       ──╯╰──        ──┴──        ──╯&num_word 1
 
 //                          hold         tap
 #define mt_min_plus      mt PLUS         MINUS
 #define mt_equal_gr      mt GRAVE        EQUAL
 #define mt_slsh_star     mt STAR         KP_SLASH
         layer1Num { bindings = <
-//╭─00─       ──┬─01─      ──┬─02─      ──┬─03─      ──┬─04─      ──╮                         ╭─05─      ──┬─06─     ──┬─07─     ──┬─08─    ──┬─09─      ──╮
+//╭─00        ──┬─01       ──┬─02       ──┬─03       ──┬─04       ──╮                         ╭─05       ──┬─06      ──┬─07      ──┬─08     ──┬─09       ──╮
   &mt_equal_gr  &mt F7 N7    &mt F8 N8    &mt F9 N9    &ht_dot 0 0                            &msc SCRL_UP &trans      &kp INSERT  &trans     &kp PSCRN
-//├─10─       ──┼─11─      ──┼─12─      ──┼─13─      ──┼─14─      ──┤                         ├─15─      ──┼─16─     ──┼─17─     ──┼─18─    ──┼─19─      ──┤
+//├─10        ──┼─11       ──┼─12       ──┼─13       ──┼─14       ──┤                         ├─15       ──┼─16      ──┼─17      ──┼─18     ──┼─19       ──┤
   &mt_min_plus  &mt F4 N4    &mt F5 N5    &mt F6 N6    &mt F10 N0                             &msc SCRL_DOWN &mmv MOVE_LEFT &mmv MOVE_UP &mmv MOVE_RIGHT &trans
-//├─20─       ──┼─21─      ──┼─22─      ──┼─23─      ──┼─24─      ──┤                         ├─25─      ──┼─26─     ──┼─27─     ──┼─28─    ──┼─29─      ──┤
+//├─20        ──┼─21       ──┼─22       ──┼─23       ──┼─24       ──┤                         ├─25       ──┼─26      ──┼─27      ──┼─28     ──┼─29       ──┤
   &mt_slsh_star &mt F1 N1    &mt F2 N2    &mt F3 N3    &mt F11 F12                            &trans       &trans      &mmv MOVE_DOWN &trans  &trans
-//╰──         ──┼── 30     ──┴── 31     ──┼── 32     ──┼── 33     ──┼── 34    ──╮╭── 35     ──┼── 36     ──┼── 37    ──┼── 38    ──┼── 39   ──┴──        ──╯
-                &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans      &trans      &trans
-//              ╰──        ──┴──        ──┴──        ──┴──        ──┴──       ──╯╰──        ──┴──        ──┴──       ──┴──       ──┴──      ──╯
-//                                                                                            ╭─ 40      ──┬── 41    ──┬── 42    ──┬── 43   ──┬── 44      ──╮
-                                                                                              &msc SCRL_UP &trans      &kp INSERT  &trans     &kp PSCRN
-//                                                                                            ├─ 45      ──┼── 46    ──┼── 47    ──┼── 48   ──┼── 49      ──┤
-                                                                                              &msc SCRL_DOWN &mmv MOVE_LEFT &mmv MOVE_UP &mmv MOVE_RIGHT &trans
-//                                                                                            ├─ 50      ──┼── 51    ──┼── 52    ──┼── 53   ──┼── 54      ──┤
-                                                                                              &trans       &trans      &mmv MOVE_DOWN &trans  &trans
-//                                                                               ╭── 55     ──┼─ 56      ──┼──       ──┴──       ──┴──      ──┴──         ──╯
-                                                                                 &trans       &trans       >; };
-//                                                                               ╰──        ──┴──        ──╯
+//╰──         ──┴──        ──┴──        ──┼─30       ──┼─31       ──┼─32      ──╮╭──33      ──┼─34       ──┼──       ──┴──       ──┴──      ──┴──        ──╯
+                                          &trans       &trans       &trans       &trans       &trans       >; };
+//                                        ╰──        ──┴──        ──┴──       ──╯╰──        ──┴──        ──╯
 #define B_UP    C_BRI_UP
 #define B_DN    C_BRI_DN
 #define V_DN    C_VOL_DN
@@ -411,82 +385,46 @@
 #define mmv_R   &mmv MOVE_RIGHT
 #define CS      LS(LCTRL)
         layer2Nav { bindings = <
-//╭─00─       ──┬─01─      ──┬─02─      ──┬─03─      ──┬─04─      ──╮                         ╭─05─      ──┬─06─     ──┬─07─     ──┬─08─    ──┬─09─      ──╮
+//╭─00        ──┬─01       ──┬─02       ──┬─03       ──┬─04       ──╮                         ╭─05       ──┬─06      ──┬─07      ──┬─08     ──┬─09       ──╮
   &hm CS B_UP   &mt LC_HOME  &kp UP       &mt LC_END   &kp PG_UP                              &trans       &trans      &kp UP      &trans     &trans
-//├─10─       ──┼─11─      ──┼─12─      ──┼─13─      ──┼─14─      ──┤                         ├─15─      ──┼─16─     ──┼─17─     ──┼─18─    ──┼─19─      ──┤
+//├─10        ──┼─11       ──┼─12       ──┼─13       ──┼─14       ──┤                         ├─15       ──┼─16      ──┼─17      ──┼─18     ──┼─19       ──┤
  &hm LSHFT B_DN &kp LEFT     &kp DOWN     &kp RIGHT    &kp PG_DN                              &kp HOME     &kp LEFT    &kp DOWN    &kp RIGHT  &kp END
-//├─20─       ──┼─21─      ──┼─22─      ──┼─23─      ──┼─24─      ──┤                         ├─25─      ──┼─26─     ──┼─27─     ──┼─28─    ──┼─29─      ──┤
+//├─20        ──┼─21       ──┼─22       ──┼─23       ──┼─24       ──┤                         ├─25       ──┼─26      ──┼─27      ──┼─28     ──┼─29       ──┤
  &hm LCTRL V_DN &kp V_UP     &kp PLAY     &kp C_NEXT   &trans                                 &trans       &trans      &trans      &trans     &trans
-//╰──         ──┼── 30     ──┴── 31     ──┼── 32     ──┼── 33     ──┼── 34    ──╮╭── 35     ──┼── 36     ──┼── 37    ──┼── 38    ──┼── 39   ──┴──        ──╯
-                &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans      &trans      &trans
-//              ╰──        ──┴──        ──┴──        ──┴──        ──┴──       ──╯╰──        ──┴──        ──┴──       ──┴──       ──┴──      ──╯
-//                                                                                            ╭─ 40      ──┬── 41    ──┬── 42    ──┬── 43   ──┬── 44      ──╮
-                                                                                              &trans       &trans      &kp UP      &trans     &trans
-//                                                                                            ├─ 45      ──┼── 46    ──┼── 47    ──┼── 48   ──┼── 49      ──┤
-                                                                                              &kp HOME     &kp LEFT    &kp DOWN    &kp RIGHT  &kp END
-//                                                                                            ├─ 50      ──┼── 51    ──┼── 52    ──┼── 53   ──┼── 54      ──┤
-                                                                                              &trans       &trans      &trans      &trans     &trans
-//                                                                               ╭── 55     ──┼─ 56      ──┼──       ──┴──       ──┴──      ──┴──         ──╯
-                                                                                 &trans       &trans       >; };
-//                                                                               ╰──        ──┴──        ──╯
+//╰──         ──┴──        ──┴──        ──┼─30       ──┼─31       ──┼─32      ──╮╭──33      ──┼─34       ──┼──       ──┴──       ──┴──      ──┴──        ──╯
+                                          &trans       &trans       &trans       &trans       &trans       >; };
+//                                        ╰──        ──┴──        ──┴──       ──╯╰──        ──┴──        ──╯
         layer3Browser { bindings = <
-//╭─00─       ──┬─01─      ──┬─02─      ──┬─03─      ──┬─04─      ──╮                         ╭─05─      ──┬─06─     ──┬─07─     ──┬─08─    ──┬─09─      ──╮
+//╭─00        ──┬─01       ──┬─02       ──┬─03       ──┬─04       ──╮                         ╭─05       ──┬─06      ──┬─07      ──┬─08     ──┬─09       ──╮
   &m_ct_tab     &kp LC(W)    SCRL_U       &kp LS(LC(T)) &kp LC(T)                              &out OUT_USB &out OUT_BLE &trans &studio_unlock &bootloader
-//├─10─       ──┼─11─      ──┼─12─      ──┼─13       ──┼─14─      ──┤                         ├─15─      ──┼─16─     ──┼─17─     ──┼─18─    ──┼─19─      ──┤
+//├─10        ──┼─11       ──┼─12       ──┼─1        ──┼─14       ──┤                         ├─15       ──┼─16      ──┼─17      ──┼─18     ──┼─19       ──┤
   &kp LA(LEFT)  SCRL_L       SCRL_D       SCRL_R       &m_dblclk                              &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
-//├─20─       ──┼─21─      ──┼─22─      ──┼─23       ──┼─24─      ──┤                         ├─25─      ──┼─26─     ──┼─27─     ──┼─28─    ──┼─29─      ──┤
+//├─20        ──┼─21       ──┼─22       ──┼─2        ──┼─24       ──┤                         ├─25       ──┼─26      ──┼─27      ──┼─28     ──┼─29       ──┤
   &mkp MCLK    &kp LC(PG_UP) &kp LC(PG_DN) &mkp LCLK   &mkp RCLK                              &bt BT_CLR   &trans      &trans      &ind_bat   &ind_con
-//╰──         ──┼── 30     ──┴── 31     ──┼── 32     ──┼── 33     ──┼── 34    ──╮╭── 35     ──┼── 36     ──┼── 37    ──┼── 38    ──┼── 39   ──┴──        ──╯
-                &trans       &trans       &trans       &trans       &trans       &trans       &trans       &trans      &trans      &trans
-//              ╰──        ──┴──        ──┴──        ──┴──        ──┴──       ──╯╰──        ──┴──        ──┴──       ──┴──       ──┴──      ──╯
-//                                                                                            ╭─ 40      ──┬── 41    ──┬── 42    ──┬── 43   ──┬── 44─      ──╮
-                                                                                              &out OUT_USB &out OUT_BLE &trans &studio_unlock &bootloader
-//                                                                                            ├─ 45      ──┼── 46    ──┼── 47    ──┼── 48   ──┼── 49─      ──┤
-                                                                                              &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4
-//                                                                                            ├─ 50      ──┼── 51    ──┼── 52    ──┼── 53   ──┼── 54       ──┤
-                                                                                              &bt BT_CLR   &trans      &trans      &ind_bat   &ind_con
-//                                                                               ╭── 55     ──┼── 56     ──┼──       ──┴──       ──┴──      ──┴──          ──╯
-                                                                                 &trans       &trans       >; };
-//                                                                               ╰──        ──┴──        ──╯
+//╰──         ──┴──        ──┴──        ──┼─30       ──┼─31       ──┼─32      ──╮╭──33      ──┼─34       ──┼──       ──┴──       ──┴──      ──┴──        ──╯
+                                          &trans       &trans       &trans       &trans       &trans       >; };
+//                                        ╰──        ──┴──        ──┴──       ──╯╰──        ──┴──        ──╯
 
         layer4MouseTest { bindings = <
-//╭─00─       ──┬─01─      ──┬─02─      ──┬─03─      ──┬─04─       ──╮                        ╭─05─      ──┬─06─     ──┬─07─     ──┬─08─    ──┬─09─      ──╮
+//╭─00        ──┬─01       ──┬─02       ──┬─03       ──┬─04        ──╮                        ╭─05       ──┬─06      ──┬─07      ──┬─08     ──┬─09       ──╮
   &trans        &trans       mmv_U        &trans       &trans                                 &trans       &trans      &trans      &trans     &trans
-//├─10─       ──┼─11─      ──┼─12─      ──┼─13─      ──┼─14─       ──┤                        ├─15─      ──┼─16─     ──┼─17─     ──┼─18─    ──┼─19─      ──┤
+//├─10        ──┼─11       ──┼─12       ──┼─13       ──┼─14        ──┤                        ├─15       ──┼─16      ──┼─17      ──┼─18     ──┼─19       ──┤
   &trans        mmv_L        mmv_D        mmv_R        &trans                                 &trans       &trans      &trans      &trans     &trans
-//├─20─       ──┼─21─      ──┼─22─      ──┼─23─      ──┼─24─       ──┤                        ├─25─      ──┼─26─     ──┼─27─     ──┼─28─    ──┼─29─      ──┤
+//├─20        ──┼─21       ──┼─22       ──┼─23       ──┼─24        ──┤                        ├─25       ──┼─26      ──┼─27      ──┼─28     ──┼─29       ──┤
   &trans        &trans       &trans       &trans       &trans                                 &trans       &trans      &trans      &trans     &trans
-//╰──         ──┼── 30     ──┼── 31     ──┼── 32     ──┼── 33      ──┼── 34    ──╮╭── 35    ──┼── 36     ──┼── 37    ──┼── 38    ──┼── 39   ──┴──        ──╯
-                &trans       &trans       &trans       &trans        &trans       &trans      &trans       &trans      &trans      &trans
-//              ╰──        ──┴──        ──┴──        ──┴──         ──┴──       ──╯╰──       ──┴──        ──┴──       ──┴──       ──┴──      ──╯
-//                                                                                            ╭─ 40      ──┬── 41    ──┬── 42    ──┬── 43   ──┬── 44      ──╮
-                                                                                              &trans       &trans      &trans      &trans     &trans
-//                                                                                            ├─ 45      ──┼── 46    ──┼── 47    ──┼── 48   ──┼── 49      ──┤
-                                                                                              &trans       &trans      &trans      &trans     &trans
-//                                                                                            ├─ 50      ──┼── 51    ──┼── 52    ──┼── 53   ──┼── 54      ──┤
-                                                                                              &trans       &trans      &trans      &trans     &trans
-//                                                                                ╭── 55    ──┼─ 56      ──┼──       ──┴──       ──┴──      ──┴──         ──╯
-                                                                                  &trans      &trans       >; };
-//                                                                                ╰──       ──┴──        ──╯
+//╰──         ──┴──        ──┴──        ──┼─30       ──┼─31       ──┼─32      ──╮╭──33      ──┼─34       ──┼──       ──┴──       ──┴──      ──┴──        ──╯
+                                          &trans       &trans       &trans       &trans       &trans       >; };
+//                                        ╰──        ──┴──        ──┴──       ──╯╰──        ──┴──        ──╯
 //         layerTemplate { bindings = <
-// //╭─00─       ──┬─01─      ──┬─02─      ──┬─03─      ──┬─04─       ──╮                        ╭─05─      ──┬─06─     ──┬─07─     ──┬─08─    ──┬─09─      ──╮
+// //╭─00        ──┬─01       ──┬─02       ──┬─03       ──┬─04       ──╮                         ╭─05       ──┬─06      ──┬─07      ──┬─08     ──┬─09       ──╮
 //   &trans        &trans       &trans       &trans       &trans                                 &trans       &trans      &trans      &trans     &trans
-// //├─10─       ──┼─11─      ──┼─12─      ──┼─13─      ──┼─14─       ──┤                        ├─15─      ──┼─16─     ──┼─17─     ──┼─18─    ──┼─19─      ──┤
+// //├─10        ──┼─11       ──┼─12       ──┼─13       ──┼─14       ──┤                         ├─15       ──┼─16      ──┼─17      ──┼─18     ──┼─19       ──┤
 //   &trans        &trans       &trans       &trans       &trans                                 &trans       &trans      &trans      &trans     &trans
-// //├─20─       ──┼─21─      ──┼─22─      ──┼─23─      ──┼─24─       ──┤                        ├─25─      ──┼─26─     ──┼─27─     ──┼─28─    ──┼─29─      ──┤
+// //├─20        ──┼─21       ──┼─22       ──┼─23       ──┼─24       ──┤                         ├─25       ──┼─26      ──┼─27      ──┼─28     ──┼─29       ──┤
 //   &trans        &trans       &trans       &trans       &trans                                 &trans       &trans      &trans      &trans     &trans
-// //╰──         ──┼── 30     ──┼── 31     ──┼── 32     ──┼── 33      ──┼── 34    ──╮╭── 35    ──┼── 36     ──┼── 37    ──┼── 38    ──┼── 39   ──┴──        ──╯
-//                 &trans       &trans       &trans       &trans        &trans       &trans      &trans       &trans      &trans      &trans
-// //              ╰──        ──┴──        ──┴──        ──┴──         ──┴──       ──╯╰──       ──┴──        ──┴──       ──┴──       ──┴──      ──╯
-// //                                                                                            ╭─ 40      ──┬── 41    ──┬── 42    ──┬── 43   ──┬── 44      ──╮
-//                                                                                               &trans       &trans      &trans      &trans     &trans
-// //                                                                                            ├─ 45      ──┼── 46    ──┼── 47    ──┼── 48   ──┼── 49      ──┤
-//                                                                                               &trans       &trans      &trans      &trans     &trans
-// //                                                                                            ├─ 50      ──┼── 51    ──┼── 52    ──┼── 53   ──┼── 54      ──┤
-//                                                                                               &trans       &trans      &trans      &trans     &trans
-// //                                                                                ╭── 55    ──┼─ 56      ──┼──       ──┴──       ──┴──      ──┴──         ──╯
-//                                                                                   &trans      &trans       >; };
-// //                                                                                ╰──       ──┴──        ──╯
+// //╰──         ──┴──        ──┴──        ──┼─30       ──┼─31       ──┼─32      ──╮╭──33      ──┼─34       ──┼──       ──┴──       ──┴──      ──┴──        ──╯
+//                                           &trans       &trans       &trans       &trans       &trans       >; };
+// //                                        ╰──        ──┴──        ──┴──       ──╯╰──        ──┴──        ──╯
 
     };
 };
