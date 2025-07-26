@@ -86,6 +86,8 @@
         ZMK_MACRO(m_dblclk,     short_m <&macro_tap &mkp LCLK &mkp LCLK                                                       > ; )
         ZMK_MACRO(m_bs,         short_m <&macro_tap &kp CAPS                                                                  > ; )
         ZMK_MACRO(m_bs_caps,    short_m <&macro_tap &kp CAPS &kp LC(BSPC)                                                     > ; )
+        ZMK_MACRO(m_next,       short_m <&macro_tap &kp C_NEXT                                                                > ; )
+        ZMK_MACRO(m_play_pause, short_m <&macro_tap &kp C_PLAY_PAUSE                                                          > ; )
 
         ZMK_MACRO(m_dot,          short_m <&macro_press &kp LALT>, <&macro_tap &kp KP_N4 &kp KP_N6>, <&macro_release &kp LALT>; ) // Alt + 46 = .
         ZMK_MACRO(m_com,          short_m <&macro_press &kp LALT>, <&macro_tap &kp KP_N4 &kp KP_N4>, <&macro_release &kp LALT>; ) // Alt + 44 = ,
@@ -188,7 +190,7 @@
         ht_back_clos:     hold_tap_go_back_close { short_ht bindings = <&m_close_tab>, <&m_go_back>; };
         ht_new_reop:      hold_tap_new_reop      { short_ht bindings = <&m_reopen_tab>,<&m_new_tab>; };
         ht_bs_caps:       hold_tap_bs_caps       { short_ht bindings = <&m_bs_caps>,   <&m_bs>; };
-        ht_media:         hold_tap_media         { short_ht bindings = <&kp C_NEXT>,   <&kp C_PLAY_PAUSE>; };
+        ht_media:         hold_tap_media         { short_ht bindings = <&m_next>,      <&m_play_pause>; };
 
         #define mt_under_minus      mt MINUS         UNDER
 
