@@ -38,7 +38,7 @@
 //   888  Y8P  888 .d888888 888      888    888  888 "Y8888b.
 //   888   "   888 888  888 Y88b.    888    Y88..88P      X88
 //   888       888 "Y888888  "Y8888P 888     "Y88P"   88888P'
-/ {
+/ 
     macros {
         ZMK_MACRO(task_manager, wait-ms = <30>; tap-ms = <40>; bindings
             = <&macro_press   &kp LCTRL &kp LSHIFT>
@@ -84,8 +84,10 @@
         ZMK_MACRO(m_search,     short_m <&macro_tap &kp LC(C) &kp LC(F) &kp LC(V)                                             > ; )
         ZMK_MACRO(macro1,       short_m <&macro_tap &kp STAR &kp LS(U) &kp LPAR &kp LS(I) &kp RPAR &kp LS(O) &kp UNDER &kp RET> ; )
         ZMK_MACRO(m_dblclk,     short_m <&macro_tap &mkp LCLK &mkp LCLK                                                       > ; )
-        ZMK_MACRO(m_bs,         short_m <&macro_tap &kp CAPS                                                                  > ; )
-        ZMK_MACRO(m_bs_caps,    short_m <&macro_tap &kp CAPS &kp LC(BSPC)                                                     > ; )
+        ZMK_MACRO(m_caps,       short_m <&macro_tap &kp CAPS                                                                  > ; )
+        ZMK_MACRO(m_bs_caps,    short_m <&macro_tap &kp LC(BSPC) &kp CAPS                                                     > ; )
+        ZMK_MACRO(m_ret,        short_m <&macro_tap &kp RET                                                                  > ; )
+        ZMK_MACRO(m_c_ret,      short_m <&macro_tap &kp LC(RET)                                                     > ; )
 
         ZMK_MACRO(m_dot,          short_m <&macro_press &kp LALT>, <&macro_tap &kp KP_N4 &kp KP_N6>, <&macro_release &kp LALT>; ) // Alt + 46 = .
         ZMK_MACRO(m_com,          short_m <&macro_press &kp LALT>, <&macro_tap &kp KP_N4 &kp KP_N4>, <&macro_release &kp LALT>; ) // Alt + 44 = ,
@@ -143,7 +145,7 @@
     //   8888888P"   "Y8888  888  888 "Y888888   Y88P   888  "Y88P"  888      88888P'
 
 
-    behaviors {
+    behaviors 
         // rot_kp: sensor_rotate_kp {
         //       compatible = "zmk,behavior-sensor-rotate-var";
         //       #sensor-binding-cells = <2>;
@@ -187,7 +189,8 @@
         ht_undo_redo:     hold_tap_undo_redo     { short_ht bindings = <&m_redo>,      <&m_undo>; };
         ht_back_clos:     hold_tap_go_back_close { short_ht bindings = <&m_close_tab>, <&m_go_back>; };
         ht_new_reop:      hold_tap_new_reop      { short_ht bindings = <&m_reopen_tab>,<&m_new_tab>; };
-        ht_bs_caps:       hold_tap_bs_caps       { short_ht bindings = <&m_bs_caps>,   <&m_bs>; };
+        ht_bs_caps:       hold_tap_bs_caps       { short_ht bindings = <&m_bs_caps>,   <&m_caps>; };
+        ht_c_ret:         hold_tap_ctrl_ret      { short_ht bindings = <&m_c_ret>,     <&m_ret>; };
 
         #define mt_under_minus      mt MINUS         UNDER
 
@@ -209,7 +212,7 @@
             continue-list = <LEFT DOWN UP RIGHT PG_DN PG_UP HOME END>;
             ignore-modifiers;
         };
-    };
+    ;
 
 
     //     .d8888b.                         888
@@ -228,14 +231,14 @@
         combo_del2     { key-positions = < 1  2   >; bindings = <&kp DEL      >; layers = <0 1>; };  // WE
         combo_esc      { key-positions = <11 13   >; bindings = <&kp ESC      >; layers = <0 1 2>; };// SF
         combo_escR     { key-positions = <16 18   >; bindings = <&kp ESC      >; layers = <0 1 2>; };// JL
-        combo_ret      { key-positions = <12 13   >; bindings = <&kp RET      >; layers = <0 1>; };  // DF
-        combo_retR     { key-positions = <16 17   >; bindings = <&kp RET      >; layers = <0 1>; };  // JK
+        combo_ret      { key-positions = <12 13   >; bindings = <&ht_c_ret 0 0>; layers = <0 1>; };  // DF
+        combo_retR     { key-positions = <16 17   >; bindings = <&ht_c_ret 0 0>; layers = <0 1>; };  // JK
         combo_rbkt     { key-positions = < 7  8  9>; bindings = <&kp RBKT     >; layers = <0  >; };  // IOP
         combo_lbkt     { key-positions = < 8  9   >; bindings = <&kp LBKT     >; layers = <0  >; };  // OP
         combo_bslh     { key-positions = <28 29   >; bindings = <&kp BSLH     >; layers = <0  >; };  // >?
         combo_apos     { key-positions = <18 19   >; bindings = <&kp APOS     >; layers = <0  >; };  // L:
         combo_escR2    { key-positions = <19 29   >; bindings = <&kp ESC      >; layers = <0  >; };  // ;/
-        combo_retR2    { key-positions = < 9 19   >; bindings = <&kp RET      >; layers = <0  >; };  // p;
+        combo_retR2    { key-positions = < 9 19   >; bindings = <&ht_c_ret 0 0>; layers = <0  >; };  // p;
         combo_task     { key-positions = < 0  1   >; bindings = <&task_manager>; layers = <0  >; };  // QW
         combo_cshf     { key-positions = <20 13   >; bindings = <&sk LS(LCTRL)>; layers = <0  >; };  // ZF
         combo_c        { key-positions = < 0 13   >; bindings = <&sk LCTRL    >; layers = <0  >; };  // QF
@@ -407,4 +410,4 @@
 // //                                        ╰──        ──┴──        ──┴──       ──╯╰──        ──┴──        ──╯
 
     };
-};
+;
