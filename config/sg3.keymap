@@ -240,7 +240,7 @@
         combo_lbkt     { key-positions = < 8  9   >; bindings = <&kp LBKT     >; layers = <0  >; };  // OP
         combo_bslh     { key-positions = <28 29   >; bindings = <&kp BSLH     >; layers = <0  >; };  // >?
         combo_apos     { key-positions = <18 19   >; bindings = <&kp APOS     >; layers = <0  >; };  // L:
-        combo_escR2    { key-positions = <19 29   >; bindings = <&kp ESC      >; layers = <0  >; };  // ;/
+        // combo_escR2    { key-positions = <19 29   >; bindings = <&kp ESC      >; layers = <0  >; };  // ;/
         combo_retR2    { key-positions = < 9 19   >; bindings = <&ht_c_ret 0 0>; layers = <0  >; };  // p;
         combo_task     { key-positions = < 0  1   >; bindings = <&task_manager>; layers = <0  >; };  // QW
         combo_cshf     { key-positions = <20 13   >; bindings = <&sk LS(LCTRL)>; layers = <0  >; };  // ZF
@@ -304,6 +304,8 @@
         combo_bt0       { key-positions = <15 25   >; bindings = <&bt BT_SEL 0>;           layers = <0>; };  // HN
         combo_bt1       { key-positions = <16 26   >; bindings = <&bt BT_SEL 1>;           layers = <0>; };  // JM
         combo_bt2       { key-positions = <17 27   >; bindings = <&bt BT_SEL 2>;           layers = <0>; };  // K<
+        combo_bt3       { key-positions = <18 28   >; bindings = <&bt BT_SEL 3>;           layers = <0>; };  // K<
+        combo_bt4       { key-positions = <19 29   >; bindings = <&bt BT_SEL 4>;           layers = <0>; };  // K<
         combo_out_tog   { key-positions = < 5  6   >; bindings = <&out OUT_TOG>;           layers = <0>; };  // YU
     };
     //  00q 01w 02e 03r 04t         05y 06u 07i 08o 09p
