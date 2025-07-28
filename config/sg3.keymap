@@ -38,7 +38,7 @@
 //   888  Y8P  888 .d888888 888      888    888  888 "Y8888b.
 //   888   "   888 888  888 Y88b.    888    Y88..88P      X88
 //   888       888 "Y888888  "Y8888P 888     "Y88P"   88888P'
-/ 
+/ {
     macros {
         ZMK_MACRO(task_manager, wait-ms = <30>; tap-ms = <40>; bindings
             = <&macro_press   &kp LCTRL &kp LSHIFT>
@@ -147,7 +147,7 @@
     //   8888888P"   "Y8888  888  888 "Y888888   Y88P   888  "Y88P"  888      88888P'
 
 
-    behaviors 
+    behaviors {
         // rot_kp: sensor_rotate_kp {
         //       compatible = "zmk,behavior-sensor-rotate-var";
         //       #sensor-binding-cells = <2>;
@@ -215,7 +215,7 @@
             continue-list = <LEFT DOWN UP RIGHT PG_DN PG_UP HOME END>;
             ignore-modifiers;
         };
-    ;
+    };
 
 
     //     .d8888b.                         888
@@ -413,4 +413,4 @@
 // //                                        ╰──        ──┴──        ──┴──       ──╯╰──        ──┴──        ──╯
 
     };
-;
+};
