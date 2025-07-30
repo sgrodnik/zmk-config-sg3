@@ -338,7 +338,7 @@
 //├──20       ──┼─21       ──┼─22       ──┼─23       ──┼─24       ──┤                        ├──25       ──┼─26      ──┼─27      ──┼─28     ──┼─29         ──┤
   &hm LSHFT Z   &hm LCTRL X  &kp C        &kp V        &kp B                                 &kp N         &kp M       &kp COMMA   &kp DOT    &hm RSHFT FSLH
 //╰──         ──┴──        ──┴──        ──┼─30       ──┼─31       ──┼─32      ──╮╭──33     ──┼─34        ──┼──enc_swL──┴──       ──┴──      ──┴──        ──╯
-                                          &mo 3        &tab2ctrl    &space1sh    &lt 1 SPACE &lt 2 RET     &ht_media 0 0     >; };
+                                          &lt 3 ESC    &tab2ctrl    &space1sh    &lt 1 SPACE &lt 2 RET     &ht_media 0 0     >; };
 //                                        ╰──        ──┴──        ──┴──       ──╯╰──       ──┴──         ──╯&num_word 1
 
 //                          hold         tap
