@@ -385,6 +385,11 @@
 #define mmv_D   &mmv MOVE_DOWN
 #define mmv_L   &mmv MOVE_LEFT
 #define mmv_R   &mmv MOVE_RIGHT
+#define mkp_MB1 &mkp LCLK
+#define mkp_MB2 &mkp RCLK
+#define mkp_MB3 &mkp MCLK
+#define mkp_MB4 &mkp MB4
+#define mkp_MB5 &mkp MB5
 #define CS      LS(LCTRL)
 #define btl_cst &hm bootloader LS(LC(T))
         layer2Nav { sensor-bindings = <&inc_dec_kp PG_UP PG_DN>; bindings = <
@@ -412,9 +417,9 @@
 //╭─00        ──┬─01       ──┬─02       ──┬─03       ──┬─04        ──╮                        ╭─05       ──┬─06      ──┬─07      ──┬─08     ──┬─09       ──╮
   &trans        &trans       mmv_U        &trans       &trans                                 &trans       &trans      &trans      &trans     &trans
 //├─10        ──┼─11       ──┼─12       ──┼─13       ──┼─14        ──┤                        ├─15       ──┼─16      ──┼─17      ──┼─18     ──┼─19       ──┤
-  &trans        mmv_L        mmv_D        mmv_R        &trans                                 &trans       &trans      &trans      &trans     &trans
+  mkp_MB5       mmv_L        mmv_D        mmv_R        &trans                                 &trans       &trans      &trans      &trans     &trans
 //├─20        ──┼─21       ──┼─22       ──┼─23       ──┼─24        ──┤                        ├─25       ──┼─26      ──┼─27      ──┼─28     ──┼─29       ──┤
-  &trans        &trans       &trans       &trans       &trans                                 &trans       &trans      &trans      &trans     &trans
+  mkp_MB4       mkp_MB3      mkp_MB2      mkp_MB1      &trans                                 &trans       &trans      &trans      &trans     &trans
 //╰──         ──┴──        ──┴──        ──┼─30       ──┼─31       ──┼─32      ──╮╭──33      ──┼─34       ──┼──enc_swL──┴──       ──┴──      ──┴──        ──╯
                                           &trans       &trans       &trans       &trans       &trans       &trans       >; };
 //                                        ╰──        ──┴──        ──┴──       ──╯╰──        ──┴──        ──╯
