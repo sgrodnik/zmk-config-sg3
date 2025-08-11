@@ -210,13 +210,13 @@
             bindings = <&mo>, <&media_tap_dance>;
         };
 
-        ht_layer3_auto: hold_tap_layer3_auto {
+        ht_l_auto: hold_tap_layer3_auto {
             compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <0>;
+            #binding-cells = <2>;
             flavor = "tap-preferred";
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
-            bindings = <&mo 3>, <&auto_layer 3>;
+            bindings = <&mo>, <&auto_layer>;
         };
 
         #define mt_under_minus      mt MINUS         UNDER
@@ -369,7 +369,7 @@
 //├──20       ──┼─21       ──┼─22       ──┼─23       ──┼─24       ──┤                        ├──25       ──┼─26      ──┼─27      ──┼─28     ──┼─29         ──┤
   &hm LSHFT Z   &hm LCTRL X  &kp C        &kp V        &kp B                                 &kp N         &kp M       &kp COMMA   &kp DOT    &hm RSHFT FSLH
 //╰──         ──┴──        ──┴──        ──┼─30       ──┼─31       ──┼─32      ──╮╭──33     ──┼─34        ──┼──enc_swL──┴──       ──┴──      ──┴──        ──╯
-                                          &ht_layer3_auto &tab2ctrl    &space1sh    &lt 1 SPACE &lt 2 RET     &media_htd 4 0     >; };
+                                        &ht_l_auto 3 3 &tab2ctrl    &space1sh    &lt 1 SPACE &lt 2 RET     &media_htd 4 0     >; };
 //                                        ╰──        ──┴──        ──┴──       ──╯╰──       ──┴──         ──╯&num_word 1
 
 //                          hold         tap
