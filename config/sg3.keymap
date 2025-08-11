@@ -198,7 +198,7 @@
         media_tap_dance: media_tap_dance {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
-            tapping-term-ms = <250>;
+            tapping-term-ms = <750>;
             bindings = <&m_play_pause>, <&m_next>;
         };
 
