@@ -243,7 +243,7 @@
         auto_layer: auto_layer {
             compatible = "zmk,behavior-auto-layer";
             #binding-cells = <1>;
-            continue-list = <LEFT DOWN UP RIGHT PG_DN PG_UP HOME END>;
+            continue-list = <MCLK LCLK RCLK>;
             ignore-modifiers;
         };
     };
@@ -328,10 +328,10 @@
         combo_sym_8s    { key-positions = <32  2   >; bindings = <&kp LS(N8)>;             layers = <0>; };
         combo_sym_9s    { key-positions = <32  3   >; bindings = <&kp LS(N9)>;             layers = <0>; };
         combo_sym_0s    { key-positions = <32 14   >; bindings = <&kp LS(N0)>;             layers = <0>; };
-        combo_lclk      { key-positions = <12 13   >; bindings = <&mkp LCLK >;             layers = <3>; };  // DF
-        combo_rclk      { key-positions = <11 12   >; bindings = <&mkp RCLK >;             layers = <3>; };  // SD
-        combo_mclk      { key-positions = <11 13   >; bindings = <&mkp MCLK >;             layers = <3>; };  // SF
-        combo_4clk      { key-positions = <11 12 13>; bindings = <&mkp MB4  >;             layers = <3>; };  // SDF
+        combo_lclk      { key-positions = <12 13   >; bindings = <&mkp LCLK >;             layers = <3>; }; slow-release;  // DF
+        combo_rclk      { key-positions = <11 12   >; bindings = <&mkp RCLK >;             layers = <3>; }; slow-release;  // SD
+        combo_mclk      { key-positions = <11 13   >; bindings = <&mkp MCLK >;             layers = <3>; }; slow-release;  // SF
+        combo_4clk      { key-positions = <11 12 13>; bindings = <&mkp MB4  >;             layers = <3>; }; slow-release;  // SDF
         combo_bt0       { key-positions = <15 25   >; bindings = <&bt BT_SEL 0>;           layers = <0>; };  // HN
         combo_bt1       { key-positions = <16 26   >; bindings = <&bt BT_SEL 1>;           layers = <0>; };  // JM
         combo_bt2       { key-positions = <17 27   >; bindings = <&bt BT_SEL 2>;           layers = <0>; };  // K<
