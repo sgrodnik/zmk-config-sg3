@@ -75,6 +75,7 @@
         ZMK_MACRO(m_del_line,   short_m <&macro_tap &kp HOME &kp HOME &kp LS(END) &kp LS(RIGHT) &kp DEL                       > ; )
         ZMK_MACRO(m_undo,       short_m <&macro_tap &kp LC(Z)                                                                 > ; )
         ZMK_MACRO(m_redo,       short_m <&macro_tap &kp LC(LS(Z))                                                             > ; )
+        ZMK_MACRO(m_paren_wrap, short_m <&macro_tap &m_cut &kp LPAR &kp RPAR &kp LEFT &m_paste                                > ; )
         ZMK_MACRO(m_go_back,    short_m <&macro_tap &kp LA(LEFT)                                                              > ; )
         ZMK_MACRO(m_close_tab,  short_m <&macro_tap &kp LC(W)                                                                 > ; )
         ZMK_MACRO(m_new_tab,    short_m <&macro_tap &kp LC(T)                                                                 > ; )
@@ -86,8 +87,8 @@
         ZMK_MACRO(m_dblclk,     short_m <&macro_tap &mkp LCLK &mkp LCLK                                                       > ; )
         ZMK_MACRO(m_caps,       short_m <&macro_tap &kp CAPS                                                                  > ; )
         ZMK_MACRO(m_bs_caps,    short_m <&macro_tap &kp LC(BSPC) &kp CAPS                                                     > ; )
-        ZMK_MACRO(m_ret,        short_m <&macro_tap &kp RET                                                                  > ; )
-        ZMK_MACRO(m_c_ret,      short_m <&macro_tap &kp LC(RET)                                                     > ; )
+        ZMK_MACRO(m_ret,        short_m <&macro_tap &kp RET                                                                   > ; )
+        ZMK_MACRO(m_c_ret,      short_m <&macro_tap &kp LC(RET)                                                               > ; )
         ZMK_MACRO(m_next,       short_m <&macro_tap &kp C_NEXT                                                                > ; )
         ZMK_MACRO(m_play_pause, short_m <&macro_tap &kp C_PLAY_PAUSE                                                          > ; )
 
@@ -194,6 +195,7 @@
         ht_bs_caps:       hold_tap_bs_caps       { short_ht bindings = <&m_bs_caps>,   <&m_caps>; };
         ht_media:         hold_tap_media         { short_ht bindings = <&m_next>,      <&m_play_pause>; };
         ht_c_ret:         hold_tap_ctrl_ret      { short_ht bindings = <&m_c_ret>,     <&m_ret>; };
+        ht_paren_wrap:    hold_tap_paren_wrap    { short_ht bindings = <&m_paren_wrap>,     <&kp LS(N9)>; };
 
         media_tap_dance: media_tap_dance {
             compatible = "zmk,behavior-tap-dance";
@@ -326,8 +328,8 @@
         combo_sym_6s    { key-positions = <32 13   >; bindings = <&kp LS(N6)>;             layers = <0>; };
         combo_sym_7s    { key-positions = <32  1   >; bindings = <&kp LS(N7)>;             layers = <0>; };
         combo_sym_8s    { key-positions = <32  2   >; bindings = <&kp LS(N8)>;             layers = <0>; };
-        combo_sym_9s    { key-positions = <32  3   >; bindings = <&kp LS(N9)>;             layers = <0>; };
-        combo_sym_0s    { key-positions = <32 14   >; bindings = <&kp LS(N0)>;             layers = <0>; };
+        combo_sym_9s    { key-positions = <32  3   >; bindings = <&ht_paren_wrap 0 0>;     layers = <0>; };
+        combo_sym_0s    { key-positions = <32  4   >; bindings = <&kp LS(N0)>;             layers = <0>; };
         combo_lclk      { key-positions = <12 13   >; bindings = <&mkp LCLK >;             layers = <3>; }; slow-release;  // DF
         combo_rclk      { key-positions = <11 12   >; bindings = <&mkp RCLK >;             layers = <3>; }; slow-release;  // SD
         combo_mclk      { key-positions = <11 13   >; bindings = <&mkp MCLK >;             layers = <3>; }; slow-release;  // SF
