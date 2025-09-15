@@ -235,6 +235,22 @@
             mods = <(MOD_LCTL)>; keep-mods = <(MOD_LCTL)>;
         };
 
+        vol_up_morph: vol_up_morph {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp TAB>, <&kp C_VOL_UP>;
+            mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LALT)>;
+        };
+
+        vol_down_morph: vol_down_morph {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp LS(TAB)>, <&kp C_VOL_DN>;
+            mods = <(MOD_LALT)>;
+            keep-mods = <(MOD_LALT)>;
+        };
+
         nav_word: nav_word {
             compatible = "zmk,behavior-auto-layer";
             #binding-cells = <1>;
@@ -363,7 +379,7 @@
     keymap {
         compatible = "zmk,keymap";
 
-        default0 { sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>; bindings = <
+        default0 { sensor-bindings = <&inc_dec_kp &vol_up_morph &vol_down_morph>; bindings = <
 //╭──00       ──┬─01       ──┬─02       ──┬─03       ──┬─04       ──╮                        ╭──05       ──┬─06      ──┬─07      ──┬─08     ──┬─09         ──╮
   &kp Q         &kp W        &kp E        &kp R        &kp T                                 &kp Y         &kp U       &kp I       &kp O      &kp P
 //├──10       ──┼─11       ──┼─12       ──┼─13       ──┼─14       ──┤                        ├──15       ──┼─16      ──┼─17      ──┼─18     ──┼─19         ──┤
