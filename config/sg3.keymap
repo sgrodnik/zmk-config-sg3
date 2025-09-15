@@ -76,7 +76,7 @@
         ZMK_MACRO(m_undo,       short_m <&macro_tap &kp LC(Z)                                                                 > ; )
         ZMK_MACRO(m_redo,       short_m <&macro_tap &kp LC(LS(Z))                                                             > ; )
         ZMK_MACRO(m_paren_wrap, short_m <&macro_tap &m_cut &kp LPAR &kp RPAR &kp LEFT &m_paste                                > ; )
-        ZMK_MACRO(m_shift9,     short_m <&macro_tap LS(N9)                                > ; )
+        ZMK_MACRO(m_shift9,     short_m <&macro_tap &kp LS(N9)                                                                > ; )
         ZMK_MACRO(m_go_back,    short_m <&macro_tap &kp LA(LEFT)                                                              > ; )
         ZMK_MACRO(m_close_tab,  short_m <&macro_tap &kp LC(W)                                                                 > ; )
         ZMK_MACRO(m_new_tab,    short_m <&macro_tap &kp LC(T)                                                                 > ; )
