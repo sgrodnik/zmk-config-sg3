@@ -76,6 +76,7 @@
         ZMK_MACRO(m_undo,       short_m <&macro_tap &kp LC(Z)                                                                 > ; )
         ZMK_MACRO(m_redo,       short_m <&macro_tap &kp LC(LS(Z))                                                             > ; )
         ZMK_MACRO(m_paren_wrap, short_m <&macro_tap &m_cut &kp LPAR &kp RPAR &kp LEFT &m_paste                                > ; )
+        ZMK_MACRO(m_shift9,     short_m <&macro_tap LS(N9)                                > ; )
         ZMK_MACRO(m_go_back,    short_m <&macro_tap &kp LA(LEFT)                                                              > ; )
         ZMK_MACRO(m_close_tab,  short_m <&macro_tap &kp LC(W)                                                                 > ; )
         ZMK_MACRO(m_new_tab,    short_m <&macro_tap &kp LC(T)                                                                 > ; )
@@ -195,7 +196,7 @@
         ht_bs_caps:       hold_tap_bs_caps       { short_ht bindings = <&m_bs_caps>,   <&m_caps>; };
         ht_media:         hold_tap_media         { short_ht bindings = <&m_next>,      <&m_play_pause>; };
         ht_c_ret:         hold_tap_ctrl_ret      { short_ht bindings = <&m_c_ret>,     <&m_ret>; };
-        ht_paren_wrap:    hold_tap_paren_wrap    { short_ht bindings = <&m_paren_wrap &kp LS(N9)>; };
+        ht_paren_wrap:    hold_tap_paren_wrap    { short_ht bindings = <&m_paren_wrap  <&m_shift9>; };
 
         media_tap_dance: media_tap_dance {
             compatible = "zmk,behavior-tap-dance";
