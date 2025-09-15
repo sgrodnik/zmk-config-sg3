@@ -196,7 +196,7 @@
         ht_bs_caps:       hold_tap_bs_caps       { short_ht bindings = <&m_bs_caps>,   <&m_caps>; };
         ht_media:         hold_tap_media         { short_ht bindings = <&m_next>,      <&m_play_pause>; };
         ht_c_ret:         hold_tap_ctrl_ret      { short_ht bindings = <&m_c_ret>,     <&m_ret>; };
-        ht_paren_wrap:    hold_tap_paren_wrap    { short_ht bindings = <&m_paren_wrap  <&m_shift9>; };
+        ht_paren_wrap:    hold_tap_paren_wrap    { short_ht bindings = <&m_paren_wrap, <&m_shift9>; };
 
         media_tap_dance: media_tap_dance {
             compatible = "zmk,behavior-tap-dance";
