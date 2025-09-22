@@ -181,7 +181,7 @@
             tapping-term-ms = <200>;
             quick-tap-ms = <0>;
             flavor = "tap-preferred";
-            bindings = <&kp>, <&layer_mod 5 LALT>; // Tap sends key, hold activates layer 5 and sends LALT
+            bindings = <&kp, &layer_mod 5 LALT>; // Tap sends key, hold activates layer 5 and sends LALT
         };
 
         #define short_ht compatible = "zmk,behavior-hold-tap"; #binding-cells = <2>; flavor = "tap-preferred"; tapping-term-ms = <200>; quick-tap-ms = <0>;
