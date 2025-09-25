@@ -188,7 +188,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
+            quick-tap-ms = <0>;s
             flavor = "tap-preferred";
             bindings = <&m_al_mo5>, <&kp>; // Tap sends key, hold activates layer 5 and sends LALT
         };
@@ -431,10 +431,10 @@
 #define PLAY    C_PLAY_PAUSE
 #define LC_HOME LC(HOME) HOME
 #define LC_END  LC(END) END
-#define SCRL_U  &msc SCRL_UP
-#define SCRL_D  &msc SCRL_DOWN
-#define SCRL_L  &msc SCRL_LEFT
-#define SCRL_R  &msc SCRL_RIGHT
+#define SCRL_U  &msc MOVE_Y(5)
+#define SCRL_D  &msc MOVE_Y(-5)
+#define SCRL_L  &msc MOVE_X(-5)
+#define SCRL_R  &msc MOVE_X(5)
 #define mmv_U   &mmv MOVE_UP
 #define mmv_D   &mmv MOVE_DOWN
 #define mmv_L   &mmv MOVE_LEFT
