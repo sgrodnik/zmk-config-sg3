@@ -188,7 +188,7 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <0>;s
+            quick-tap-ms = <0>;
             flavor = "tap-preferred";
             bindings = <&m_al_mo5>, <&kp>; // Tap sends key, hold activates layer 5 and sends LALT
         };
