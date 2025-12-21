@@ -20,3 +20,30 @@
         , <&gpio0 11 (GPIO_ACTIVE_HIGH | GPIO_PULL_DOWN)>
         ;
 };
+
+#include <behaviors/rgbled_widget.dtsi>
+
+/ {
+    aliases {
+        led-red = &led_red;
+        led-green = &led_green;
+        led-blue = &led_blue;
+    };
+
+    leds {
+        compatible = "gpio-leds";
+        status = "okay";
+        led_red: led_0_31 {
+            gpios = <&gpio0 31 GPIO_ACTIVE_LOW>;
+            label = "Red LED";
+        };
+        led_green: led_0_02 {
+            gpios = <&gpio0 2 GPIO_ACTIVE_LOW>;
+            label = "Green LED";
+        };
+        led_blue: led_0_29 {
+            gpios = <&gpio0 29 GPIO_ACTIVE_LOW>;
+            label = "Blue LED";
+        };
+    };
+};
