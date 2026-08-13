@@ -101,6 +101,26 @@
         ZMK_MACRO(m_c_ret,      short_m <&macro_tap &kp LC(RET)                                                               > ; )
         ZMK_MACRO(m_next,       short_m <&macro_tap &kp C_NEXT                                                                > ; )
         ZMK_MACRO(m_play_pause, short_m <&macro_tap &kp C_PLAY_PAUSE                                                          > ; )
+        ZMK_MACRO(m_q_home,     short_m <&macro_tap &kp HOME>; )
+        ZMK_MACRO(m_w_alt_left, short_m <&macro_tap &kp LA(LEFT)>; )
+        ZMK_MACRO(m_e_end,      short_m <&macro_tap &kp END>; )
+        ZMK_MACRO(m_r_ctrl_left,short_m <&macro_tap &kp LC(LEFT)>; )
+        ZMK_MACRO(m_t_ctrl_right,short_m <&macro_tap &kp LC(RIGHT)>; )
+        ZMK_MACRO(m_bt0,        short_m <&macro_tap &bt BT_SEL 0>; )
+        ZMK_MACRO(m_bt1,        short_m <&macro_tap &bt BT_SEL 1>; )
+        ZMK_MACRO(m_bt2,        short_m <&macro_tap &bt BT_SEL 2>; )
+        ZMK_MACRO(m_bt3,        short_m <&macro_tap &bt BT_SEL 3>; )
+        ZMK_MACRO(m_bt4,        short_m <&macro_tap &bt BT_SEL 4>; )
+        ZMK_MACRO(m_q,          short_m <&macro_tap &kp Q>; )
+        ZMK_MACRO(m_w,          short_m <&macro_tap &kp W>; )
+        ZMK_MACRO(m_e,          short_m <&macro_tap &kp E>; )
+        ZMK_MACRO(m_r,          short_m <&macro_tap &kp R>; )
+        ZMK_MACRO(m_t,          short_m <&macro_tap &kp T>; )
+        ZMK_MACRO(m_n0,         short_m <&macro_tap &kp N0>; )
+        ZMK_MACRO(m_n1,         short_m <&macro_tap &kp N1>; )
+        ZMK_MACRO(m_n2,         short_m <&macro_tap &kp N2>; )
+        ZMK_MACRO(m_n3,         short_m <&macro_tap &kp N3>; )
+        ZMK_MACRO(m_n4,         short_m <&macro_tap &kp N4>; )
 
         ZMK_MACRO(m_dot,          short_m <&macro_press &kp LALT>, <&macro_tap &kp KP_N4 &kp KP_N6>, <&macro_release &kp LALT>; ) // Alt + 46 = .
         ZMK_MACRO(m_com,          short_m <&macro_press &kp LALT>, <&macro_tap &kp KP_N4 &kp KP_N4>, <&macro_release &kp LALT>; ) // Alt + 44 = ,
@@ -215,16 +235,16 @@
         ht_media:         hold_tap_media         { short_ht bindings = <&m_next>,      <&m_play_pause>; };
         ht_c_ret:         hold_tap_ctrl_ret      { short_ht bindings = <&m_c_ret>,     <&m_ret>; };
         ht_paren_wrap:    hold_tap_paren_wrap    { short_ht bindings = <&m_paren_wrap>,<&m_shift9>; };
-        ht_q:             hold_tap_q_home        { short_ht bindings = <&kp HOME>,     <&kp Q>; };
-        ht_w:             hold_tap_w_alt_left    { short_ht bindings = <&kp LA(LEFT)>, <&kp W>; };
-        ht_e:             hold_tap_e_end         { short_ht bindings = <&kp END>,      <&kp E>; };
-        ht_r:             hold_tap_r_ctrl_left   { short_ht bindings = <&kp LC(LEFT)>, <&kp R>; };
-        ht_t:             hold_tap_t_ctrl_right  { short_ht bindings = <&kp LC(RIGHT)>,<&kp T>; };
-        ht_bt_sel_0:      hold_tap_bt_sel_0      { short_ht bindings = <&bt BT_SEL 0>, <&kp N0>; };
-        ht_bt_sel_1:      hold_tap_bt_sel_1      { short_ht bindings = <&bt BT_SEL 1>, <&kp N1>; };
-        ht_bt_sel_2:      hold_tap_bt_sel_2      { short_ht bindings = <&bt BT_SEL 2>, <&kp N2>; };
-        ht_bt_sel_3:      hold_tap_bt_sel_3      { short_ht bindings = <&bt BT_SEL 3>, <&kp N3>; };
-        ht_bt_sel_4:      hold_tap_bt_sel_4      { short_ht bindings = <&bt BT_SEL 4>, <&kp N4>; };
+        ht_q:             hold_tap_q_home        { short_ht bindings = <&m_q_home>,       <&m_q>; };
+        ht_w:             hold_tap_w_alt_left    { short_ht bindings = <&m_w_alt_left>,   <&m_w>; };
+        ht_e:             hold_tap_e_end         { short_ht bindings = <&m_e_end>,        <&m_e>; };
+        ht_r:             hold_tap_r_ctrl_left   { short_ht bindings = <&m_r_ctrl_left>,  <&m_r>; };
+        ht_t:             hold_tap_t_ctrl_right  { short_ht bindings = <&m_t_ctrl_right>, <&m_t>; };
+        ht_bt_sel_0:      hold_tap_bt_sel_0      { short_ht bindings = <&m_bt0>, <&m_n0>; };
+        ht_bt_sel_1:      hold_tap_bt_sel_1      { short_ht bindings = <&m_bt1>, <&m_n1>; };
+        ht_bt_sel_2:      hold_tap_bt_sel_2      { short_ht bindings = <&m_bt2>, <&m_n2>; };
+        ht_bt_sel_3:      hold_tap_bt_sel_3      { short_ht bindings = <&m_bt3>, <&m_n3>; };
+        ht_bt_sel_4:      hold_tap_bt_sel_4      { short_ht bindings = <&m_bt4>, <&m_n4>; };
 
         media_tap_dance: media_tap_dance {
             compatible = "zmk,behavior-tap-dance";
